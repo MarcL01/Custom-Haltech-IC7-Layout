@@ -14,7 +14,7 @@ var bDoubleClick = false;
 
 function onClicked(x,y,b)
 {
-	//console.log("clicked x="+x+",y="+y);
+    //console.log("clicked x="+x+",y="+y);
 	if(bDoubleClick) return;
 	if(b & Qt.RightButton)
 		console.log("Right button clicked")
@@ -178,24 +178,28 @@ function initLayout3(){
 	addWidget(3,150,25,420,150,"layout_03_07");
 }
 
-function initLayout4(){
-	addWidget(4,0,80,150,100,"layout_04_02");
-	addWidget(4,0,180,150,100,"layout_04_06");
-	addWidget(4,0,280,150,100,"layout_04_10");
-	addWidget(4,0,380,150,100,"layout_04_14");
-	addWidget(4,150,80,180,100,"layout_04_03");
-	addWidget(4,150,180,180,100,"layout_04_07");
-	addWidget(4,150,280,180,100,"layout_04_11");
-	addWidget(4,150,380,180,100,"layout_04_15");	
-	addWidget(4,470,80,180,100,"layout_04_04");
-	addWidget(4,470,180,180,100,"layout_04_08");
-	addWidget(4,470,280,180,100,"layout_04_12");
-	addWidget(4,470,380,180,100,"layout_04_16");
-	addWidget(4,650,80,180,100,"layout_04_05");
-	addWidget(4,650,180,180,100,"layout_04_09");
-	addWidget(4,650,280,180,100,"layout_04_13");
-	addWidget(4,650,380,180,100,"layout_04_17");
-	addWidget(4,330,85,140,200,"layout_04_gear");
+function initLayout4(){ // Screen 7
+    addWidget(4,40,8,715,150,"layout_04_RPM_GAUGE"); // RPM
+    addWidget(4,342,335,120,65,"layout_04_gear"); // Gear
+    addWidget(4,310,180,180,150,"layout_04_07"); // Speed
+    addWidget(4,80,190,210,105,"layout_04_08"); // Fuel Pressure
+    addWidget(4,80,295,210,105,"layout_04_15"); // Fuel Tempurature
+    addWidget(4,510,190,210,105,"layout_04_09"); // Oil Pressure
+    addWidget(4,510,295,210,105,"layout_04_13"); // Oil Tempurature
+    addWidget(4,125,415,255,60,"layout_04_03"); // ECT
+    addWidget(4,430,415,255,60,"layout_04_16"); // Fuel Level
+
+    // Haven't been used yet:
+//    addWidget(4,40,8,715,150,"layout_04_02");
+//	addWidget(4,0,180,150,100,"layout_04_06");
+//	addWidget(4,0,280,150,100,"layout_04_10");
+//	addWidget(4,0,380,150,100,"layout_04_14");
+//	addWidget(4,150,280,180,100,"layout_04_11");
+//    addWidget(4,110,295,210,105,"layout_04_04");
+//	addWidget(4,470,280,180,100,"layout_04_12");
+//	addWidget(4,650,80,180,100,"layout_04_05");
+//	addWidget(4,650,380,180,100,"layout_04_17");
+
 }
 function initLayout5(){
 	//Dummy for addWidget to work
@@ -232,7 +236,7 @@ function initLayout6(){
 }
 function initLayout7(){
 	addWidget(7,170,250,120,40,"layout_07_01");
-	addWidget(7,510,250,120,40,"layout_07_02");
+    addWidget(7,510,250,120,40,"layout_07_02");
 	addWidget(7,110,20,300,300,"layout_07_heroCircularGauge_1");
 	addWidget(7,450,20,300,300,"layout_07_heroCircularGauge_2");
 	addWidget(7,25,370,100,100,"layout_07_03");	
