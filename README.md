@@ -56,6 +56,8 @@ Experimental repo used to design custom Haltech IC7 layouts using Qt Studio and 
 
 - `data/GaugeSettings.json` - contains gauge settings that are used in the IC software, these are not used when running in Qt Creator
 
+- `qml/user_screens/GaugeConfig.js` - similar to `GaugeSettings.json` contains the gauge settings that are used when running via Qt Creator, these are not used when running in the IC software.
+
 - `qml/factory_screens/channels.js` - contains the x,y,width,height of every channel that is clickable in the IC software; when you click on a gauge to simulate it's value or change its unit/data type.
 
 - `qml/user_components/` - contains all of the components (gauges, alerts, tell tale lights, etc)
