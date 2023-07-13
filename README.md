@@ -5,6 +5,7 @@ Experimental repo used to design custom Haltech IC7 layouts using Qt Studio and 
 > Not responsible for any damages, be very careful here! Though no firmware is edited here, **so in theory**, all work here is safe. You would get an error in IC software before you can upload to hardware if you mess something up.
 
 ![Experimental V0 Example in Qt Creator](repo_images/v0-example.png)
+> The above layout can be found under the [v0 branch](https://github.com/MarcL01/Custom-Haltech-IC7-Layout/tree/v0-layout-experiment), you can see what I changed [here](https://github.com/MarcL01/Custom-Haltech-IC7-Layout/compare/main...v0-layout-experiment)
 
 # How do I use this?
 
@@ -50,3 +51,17 @@ Experimental repo used to design custom Haltech IC7 layouts using Qt Studio and 
 6. Make changes to your heart's content.
 
 7. Before you transfer your changes back to IC software you must undo the comment change done in step 4.
+
+# What files/dirs matter?
+
+- `data/GaugeSettings.json` - contains gauge settings that are used in the IC software, these are not used when running in Qt Creator
+
+- `qml/factory_screens/channels.js` - contains the x,y,width,height of every channel that is clickable in the IC software; when you click on a gauge to simulate it's value or change its unit/data type.
+
+- `qml/user_components/` - contains all of the components (gauges, alerts, tell tale lights, etc)
+
+- `qml/user_screens/` - contains all of the screens
+
+- `qml/images/` - contains all of the images, you can add your own custom images and reference them in QML.
+
+- `qml/styles/` - contains fonts and qml style object. You can add custom fonts and reference them in QML.
