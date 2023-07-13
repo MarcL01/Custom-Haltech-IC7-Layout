@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/content/qml/factory_screens">
+        <file>main.qml</file>
+        <file>SplashScreen.qml</file>
+        <file>ScreenYellowBorder.qml</file>
+    </qresource>
+</RCC>

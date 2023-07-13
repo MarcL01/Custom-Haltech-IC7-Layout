@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/content/qml/user_components">
+        <file>TextFieldScreen01Normal.qml</file>
+        <file>TextFieldScreen01Bold.qml</file>
+        <file>TextFieldScreen01Data.qml</file>
+        <file>AlertPopup_01.qml</file>
+        <file>Gauge_01_TickMarkLabel.qml</file>
+        <file>CustomCircularGauge.qml</file>
+		<file>SimpleData.qml</file>
+    </qresource>
+</RCC>

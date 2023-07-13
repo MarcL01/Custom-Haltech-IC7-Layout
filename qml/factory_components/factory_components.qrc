@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/content/qml/factory_components">
+        <file>TextField01.qml</file>
+        <file>Line01.qml</file>
+    </qresource>
+</RCC>

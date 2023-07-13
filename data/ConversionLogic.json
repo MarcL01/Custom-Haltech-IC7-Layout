@@ -1,0 +1,723 @@
+[
+  {
+  "oldVersion" : "1.0",
+  "file": "/qml/user_screens",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+	]
+  },
+   {
+  "oldVersion" : "1.0",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0",
+  "file": "/qml/factory_screens",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0",
+  "file": "/qml/factory_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0",
+  "file": "/images",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0",
+  "file": "/styles",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0",
+  "file": "/data/datamaplist.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0",
+  "file": "/data/Sensors.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0",
+  "file": "/data/ConversionLogic.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },   
+  {
+  "oldVersion" : "1.0",
+  "file": "/data/ColorPalettePreferences.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0",
+  "file": "/data/GaugeSettings.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroCircularGauge1",
+	  "newValue": "screen_01_heroCircularGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroCircularGauge2",
+	  "newValue": "screen_02_heroCircularGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroLeftGauge3",
+	  "newValue": "screen_03_heroLeftGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroRightGauge3",
+	  "newValue": "screen_03_heroRightGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroLeftGauge4",
+	  "newValue": "screen_04_heroLeftGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroRightGauge4",
+	  "newValue": "screen_04_heroRightGauge"
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/Screen_01.qml",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	}
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/Screen_03.qml",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	}
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/Screen_05.qml",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	}
+   ]
+  }, 
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/Screen_07.qml",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	}
+   ]
+  }, 
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/data/GaugeSettings.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroCircularGauge1",
+	  "newValue": "screen_01_heroCircularGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroCircularGauge2",
+	  "newValue": "screen_02_heroCircularGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroLeftGauge3",
+	  "newValue": "screen_03_heroLeftGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroRightGauge3",
+	  "newValue": "screen_03_heroRightGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroLeftGauge4",
+	  "newValue": "screen_04_heroLeftGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroRightGauge4",
+	  "newValue": "screen_04_heroRightGauge"
+	},
+   ]
+  },
+    {
+  "oldVersion" : "1.0OBD",
+  "file": "/data/ScreenMap.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "Screen_04",
+	  "newValue": "Screen_07"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "Screen_03",
+	  "newValue": "Screen_05"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "Screen_02",
+	  "newValue": "Screen_03"
+	}
+   ]
+  }, 
+   {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/GaugeConfig.js",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroCircularGauge1",
+	  "newValue": "screen_01_heroCircularGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroCircularGauge2",
+	  "newValue": "screen_02_heroCircularGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroLeftGauge3",
+	  "newValue": "screen_03_heroLeftGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroRightGauge3",
+	  "newValue": "screen_03_heroRightGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroLeftGauge4",
+	  "newValue": "screen_04_heroLeftGauge"
+	},
+    { 
+	  "operation": "replacestring",
+	  "oldValue": "heroRightGauge4",
+	  "newValue": "screen_04_heroRightGauge"
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/Screen_04.qml",
+  "actionList" :
+   [
+    { 
+	  "operation": "renamefile",
+	  "oldValue": "Screen_04.qml",
+	  "newValue": "Screen_07.qml"
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/Screen_03.qml",
+  "actionList" :
+   [
+    { 
+	  "operation": "renamefile",
+	  "oldValue": "Screen_03.qml",
+	  "newValue": "Screen_05.qml"
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_screens/Screen_02.qml",
+  "actionList" :
+   [
+    { 
+	  "operation": "renamefile",
+	  "oldValue": "Screen_02.qml",
+	  "newValue": "Screen_03.qml"
+	},
+   ]
+  },    
+ {
+  "oldVersion" : "1.0OBD",
+  "file": "/data/ColorPalettePreferences.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/factory_screens",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0OBD",
+  "file": "/qml/factory_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/images",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/styles",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/data/datamaplist.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.0OBD",
+  "file": "/data/Sensors.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.0OBD",
+  "file": "/data/ConversionLogic.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },    
+   {
+  "oldVersion" : "1.2",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.2",
+  "file": "/qml/factory_screens",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.2",
+  "file": "/qml/factory_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.2",
+  "file": "/images",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.2",
+  "file": "/styles",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.2",
+  "file": "/data/datamaplist.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.2",
+  "file": "/data/Sensors.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.2",
+  "file": "/data/ConversionLogic.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.3",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.3",
+  "file": "/qml/factory_screens",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "1.3",
+  "file": "/qml/factory_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.3",
+  "file": "/images",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.3",
+  "file": "/styles",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.3",
+  "file": "/data/datamaplist.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.3",
+  "file": "/data/ConversionLogic.json",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefile",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.4",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.5",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },  
+  {
+  "oldVersion" : "1.6",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "1.7.0",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "*",
+  "file": "/qml/user_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "*",
+  "file": "/qml/factory_screens",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+   {
+  "oldVersion" : "*",
+  "file": "/qml/factory_components",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	},
+   ]
+  },
+  {
+  "oldVersion" : "*",
+  "file": "/images",
+  "actionList" :
+   [
+    { 
+	  "operation": "replacefolder",
+	  "oldValue": "",
+	  "newValue": ""
+	}
+   ]
+  }
+]

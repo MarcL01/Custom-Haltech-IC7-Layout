@@ -1,0 +1,132 @@
+[
+   {
+      "DataMapAddress": 1,
+      "Description": "RPM",
+      "MessageID":2015,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":12,
+      "Period":100,
+      "Converter": {"x1": 0,"y1": 0,"x2": 250,"y2": 1000}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":64,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":5,
+      "Period":1000,
+      "Description": "Engine Coolant Temperature",
+      "Converter": {"x1": 2331.6,"y1": 0.0,"y2": 40.0,"x2": 2731.6}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":65,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":15,
+      "Period":1000,
+      "Description": "Intake Air Temperature",
+      "Converter": {"y1": 0.0,"x1": 2331.6,"y2": 40.0,"x2": 2731.6}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":3,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":17,
+      "Period":500,
+      "Description": "ABS Throttle Position",
+      "Converter": {"y1": 0.0,"x1": 0.0,"y2": 255,"x2": 1000}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":2,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":11,
+      "Period":500,
+      "Description": "Manifold Pressure",
+      "Converter": {"x1": 0.0,"y1": 0.0,"y2": 1,"x2": 10}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":72,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":6,
+      "Period":1000,
+      "Description": "Fuel Trim Short Term Bank 1",
+      "Converter": {"x1": -1000.0,"y1": 0.0,"x2": 0,"y2": 128}
+   }, 
+   {
+      "MessageID":2015,
+      "DataMapAddress":73,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":8,
+      "Period":1000,
+      "Description": "Fuel Trim Short Term Bank 2",
+      "Converter": {"x1": -1000.0,"y1": 0.0,"x2": 0,"y2": 128}
+   },
+    {
+      "MessageID":2015,
+      "DataMapAddress":74,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":7,
+      "Period":1000,
+      "Description": "Fuel Trim Long Term Bank 1",
+      "Converter": {"x1": -1000.0,"y1": 0.0,"x2": 0,"y2": 128}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":75,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":9,
+      "Period":1000,
+      "Description": "Fuel Trim Long Term Bank 2",
+      "Converter": {"x1": -1000.0,"y1": 0.0,"x2": 0,"y2": 128}
+   },
+     {
+      "MessageID":2015,
+      "DataMapAddress":39,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":13,
+      "Period":500,
+      "Description": "Vehicle Speed",
+      "Converter": {"x1": 0.0,"y1": 0.0,"x2": 10,"y2": 1.0}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":14,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":38,
+      "Period":1000,
+      "Description": "Wideband Sensor 1",
+      "Converter": {"x1": 0.0,"y1": 0.0,"x2": 125,"y2": 4096}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":15,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":39,
+      "Period":1000,
+      "Description": "Wideband Sensor 2",
+      "Converter": {"x1": 0.0,"y1": 0.0,"x2": 125,"y2": 4096}
+   },
+   {
+      "MessageID":2015,
+      "DataMapAddress":45,
+      "BytesWritten":2,
+      "BytesCount":1,
+      "PIDValue":66,
+      "Period":500,
+      "Description": "Battery voltage",
+      "Converter": {"x1": 0,"y1": 0,"x2":1000,"y2": 1}
+   }
+]

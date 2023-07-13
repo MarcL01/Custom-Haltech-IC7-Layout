@@ -1,0 +1,2152 @@
+[
+  {
+    "Name": "RPM",
+    "ID": 1,
+    "GroupID": 0
+  },
+  {
+    "Name": "MANIFOLD PRESSURE",
+    "ID": 2,
+    "GroupID": 2
+  },
+  {
+    "Name": "THROTTLE POSITION",
+    "ID": 3,
+    "GroupID": 16
+  },
+  {
+    "Name": "COOLANT PRESSURE",
+    "ID": 4,
+    "GroupID": 2
+  },
+  {
+    "Name": "FUEL PRESSURE",
+    "ID": 5,
+    "GroupID": 25
+  },
+  {
+    "Name": "OIL PRESSURE",
+    "ID": 6,
+    "GroupID": 25
+  },
+  {
+    "Name": "ENGINE DEMAND",
+    "ID": 7,
+    "GroupID": 16
+  },
+  {
+    "Name": "WASTEGATE PRESSURE",
+    "ID": 8,
+    "GroupID": 2
+  },
+  {
+    "Name": "INJECTION STAGE 1 DUTY CYCLE",
+    "ID": 9,
+    "GroupID": 16
+  },
+  {
+    "Name": "INJECTION STAGE 2 DUTY CYCLE",
+    "ID": 10,
+    "GroupID": 16
+  },
+  {
+    "Name": "IGNITION ANGLE LEADING",
+    "ID": 11,
+    "GroupID": 10
+  },
+  {
+    "Name": "WHEEL SLIP",
+    "ID": 12,
+    "GroupID": 16
+  },
+  {
+    "Name": "WHEEL DIFF",
+    "ID": 13,
+    "GroupID": 16
+  },
+  {
+    "Name": "WIDEBAND SENSOR 1",
+    "ID": 14,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 2",
+    "ID": 15,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 3",
+    "ID": 16,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 4",
+    "ID": 17,
+    "GroupID": 4
+  },
+  {
+    "Name": "TRIGGER SYSTEM ERROR COUNT",
+    "ID": 18,
+    "GroupID": 19
+  },
+  {
+    "Name": "TRIGGER COUNTER",
+    "ID": 19,
+    "GroupID": 19
+  },
+  {
+    "Name": "TRIGGER SYNC LEVEL",
+    "ID": 20,
+    "GroupID": 19
+  },
+  {
+    "Name": "KNOCK LEVEL 1",
+    "ID": 21,
+    "GroupID": 11
+  },
+  {
+    "Name": "KNOCK LEVEL 2",
+    "ID": 22,
+    "GroupID": 11
+  },
+  {
+    "Name": "BRAKE PRESSURE",
+    "ID": 23,
+    "GroupID": 28
+  },
+  {
+    "Name": "NOS PRESSURE SENSOR 1",
+    "ID": 24,
+    "GroupID": 25
+  },
+  {
+    "Name": "TURBO SPEED SENSOR 1",
+    "ID": 25,
+    "GroupID": 0
+  },
+  {
+    "Name": "LATERAL G",
+    "ID": 26,
+    "GroupID": 8
+  },
+  {
+    "Name": "WHEEL SPEED FRONT LEFT",
+    "ID": 27,
+    "GroupID": 3
+  },
+  {
+    "Name": "WHEEL SPEED FRONT RIGHT",
+    "ID": 28,
+    "GroupID": 3
+  },
+  {
+    "Name": "WHEEL SPEED REAR LEFT",
+    "ID": 29,
+    "GroupID": 3
+  },
+  {
+    "Name": "WHEEL SPEED REAR RIGHT",
+    "ID": 30,
+    "GroupID": 3
+  },
+  {
+    "Name": "EXHAUST CAM ANGLE 1",
+    "ID": 31,
+    "GroupID": 10
+  },
+  {
+    "Name": "EXHAUST CAM ANGLE 2",
+    "ID": 32,
+    "GroupID": 10
+  },
+  {
+    "Name": "ENGINE LIMITING ACTIVE",
+    "ID": 33,
+    "GroupID": 19
+  },
+  {
+    "Name": "LAUNCH CONTROL IGNITION RETARD",
+    "ID": 34,
+    "GroupID": 10
+  },
+  {
+    "Name": "LAUNCH CONTROL FUEL ENRICH",
+    "ID": 35,
+    "GroupID": 16
+  },
+  {
+    "Name": "LONGITUDINAL G",
+    "ID": 36,
+    "GroupID": 8
+  },
+  {
+    "Name": "GENERIC OUTPUT 1 DUTY CYCLE",
+    "ID": 37,
+    "GroupID": 16
+  },
+  {
+    "Name": "BOOST CONTROL OUTPUT",
+    "ID": 38,
+    "GroupID": 16
+  },
+  {
+    "Name": "VEHICLE SPEED",
+    "ID": 39,
+    "GroupID": 3
+  },
+  {
+    "Name": "GEAR",
+    "ID": 40,
+    "GroupID": 20
+  },
+  {
+    "Name": "INTAKE CAM ANGLE 1",
+    "ID": 41,
+    "GroupID": 10
+  },
+  {
+    "Name": "INTAKE CAM ANGLE 2",
+    "ID": 42,
+    "GroupID": 10
+  },
+  {
+    "Name": "FUEL FLOW",
+    "ID": 43,
+    "GroupID": 22
+  },
+  {
+    "Name": "FUEL FLOW RETURN",
+    "ID": 44,
+    "GroupID": 22
+  },
+  {
+    "Name": "BATTERY VOLTAGE",
+    "ID": 45,
+    "GroupID": 6
+  },
+  {
+    "Name": "TARGET BOOST LEVEL",
+    "ID": 46,
+    "GroupID": 27
+  },
+  {
+    "Name": "BAROMETRIC PRESSURE",
+    "ID": 47,
+    "GroupID": 2
+  },
+  {
+    "Name": "EGT SENSOR 1",
+    "ID": 48,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 2",
+    "ID": 49,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 3",
+    "ID": 50,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 4",
+    "ID": 51,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 5",
+    "ID": 52,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 6",
+    "ID": 53,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 7",
+    "ID": 54,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 8",
+    "ID": 55,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 9",
+    "ID": 56,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 10",
+    "ID": 57,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 11",
+    "ID": 58,
+    "GroupID": 5
+  },
+  {
+    "Name": "EGT SENSOR 12",
+    "ID": 59,
+    "GroupID": 5
+  },
+  {
+    "Name": "AMBIENT AIR TEMPERATURE",
+    "ID": 60,
+    "GroupID": 5
+  },
+  {
+    "Name": "RELATIVE HUMIDITY",
+    "ID": 61,
+    "GroupID": 16
+  },
+  {
+    "Name": "SPECIFIC HUMIDITY",
+    "ID": 62,
+    "GroupID": 17
+  },
+  {
+    "Name": "ABSOLUTE HUMIDITY",
+    "ID": 63,
+    "GroupID": 18
+  },
+  {
+    "Name": "COOLANT TEMPERATURE",
+    "ID": 64,
+    "GroupID": 5
+  },
+  {
+    "Name": "AIR TEMPERATURE",
+    "ID": 65,
+    "GroupID": 5
+  },
+  {
+    "Name": "FUEL TEMPERATURE",
+    "ID": 66,
+    "GroupID": 5
+  },
+  {
+    "Name": "OIL TEMPERATURE",
+    "ID": 67,
+    "GroupID": 5
+  },
+  {
+    "Name": "GEARBOX OIL TEMPERATURE",
+    "ID": 68,
+    "GroupID": 5
+  },
+  {
+    "Name": "DIFF OIL TEMPERATURE",
+    "ID": 69,
+    "GroupID": 5
+  },
+  {
+    "Name": "FUEL COMPOSITION",
+    "ID": 70,
+    "GroupID": 16
+  },
+  {
+    "Name": "FUEL LEVEL",
+    "ID": 71,
+    "GroupID": 1
+  },
+  {
+    "Name": "FUEL TRIM SHORT TERM BANK 1",
+    "ID": 72,
+    "GroupID": 16
+  },
+  {
+    "Name": "FUEL TRIM SHORT TERM BANK 2",
+    "ID": 73,
+    "GroupID": 16
+  },
+  {
+    "Name": "FUEL TRIM LONG TERM BANK 1",
+    "ID": 74,
+    "GroupID": 16
+  },
+  {
+    "Name": "FUEL TRIM LONG TERM BANK 2",
+    "ID": 75,
+    "GroupID": 16
+  },
+  {
+    "Name": "GEAR SWITCH",
+    "ID": 76,
+    "GroupID": 20
+  },
+  {
+    "Name": "DECEL CUT ACTIVE",
+    "ID": 77,
+    "GroupID": 20
+  },
+  {
+    "Name": "TRANSIENT THROTTLE ACTIVE",
+    "ID": 78,
+    "GroupID": 20
+  },
+  {
+    "Name": "BRAKE PEDAL SWITCH",
+    "ID": 79,
+    "GroupID": 20
+  },
+  {
+    "Name": "CLUTCH SWITCH",
+    "ID": 80,
+    "GroupID": 20
+  },
+  {
+    "Name": "ANTI LAG ACTIVE",
+    "ID": 81,
+    "GroupID": 20
+  },
+  {
+    "Name": "AUX RPM LIMITER ACTIVE",
+    "ID": 82,
+    "GroupID": 20
+  },
+  {
+    "Name": "FLAT SHIFT SWITCH",
+    "ID": 83,
+    "GroupID": 20
+  },
+  {
+    "Name": "TORQUE REDUCTION ACTIVE",
+    "ID": 84,
+    "GroupID": 20
+  },
+  {
+    "Name": "ROTARY TRIM POT 1",
+    "ID": 85,
+    "GroupID": 19
+  },
+  {
+    "Name": "ROTARY TRIM POT 2",
+    "ID": 86,
+    "GroupID": 19
+  },
+  {
+    "Name": "ROTARY TRIM POT 3",
+    "ID": 87,
+    "GroupID": 19
+  },
+  {
+    "Name": "CHECK ENGINE LIGHT",
+    "ID": 88,
+    "GroupID": 20
+  },
+  {
+    "Name": "BATTERY LIGHT ACTIVE",
+    "ID": 89,
+    "GroupID": 20
+  },
+  {
+    "Name": "IGNITION SWITCH",
+    "ID": 90,
+    "GroupID": 20
+  },
+  {
+    "Name": "TURBO TIMER   TIME REMAINING",
+    "ID": 91,
+    "GroupID": 21
+  },
+  {
+    "Name": "TURBO TIMER   ENGINE TIME REMAINING",
+    "ID": 92,
+    "GroupID": 21
+  },
+  {
+    "Name": "STEERING WHEEL ANGLE",
+    "ID": 93,
+    "GroupID": 10
+  },
+  {
+    "Name": "DRIVESHAFT RPM",
+    "ID": 94,
+    "GroupID": 0
+  },
+  {
+    "Name": "NOS PRESSURE SENSOR 2",
+    "ID": 95,
+    "GroupID": 9
+  },
+  {
+    "Name": "NOS PRESSURE SENSOR 3",
+    "ID": 96,
+    "GroupID": 9
+  },
+  {
+    "Name": "NOS PRESSURE SENSOR 4",
+    "ID": 97,
+    "GroupID": 9
+  },
+  {
+    "Name": "TURBO SPEED SENSOR 2",
+    "ID": 98,
+    "GroupID": 7
+  },
+  {
+    "Name": "GENERIC SENSOR 1",
+    "ID": 99,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 2",
+    "ID": 100,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 3",
+    "ID": 101,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 4",
+    "ID": 102,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 5",
+    "ID": 103,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 6",
+    "ID": 104,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 7",
+    "ID": 105,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 8",
+    "ID": 106,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 9",
+    "ID": 107,
+    "GroupID": 16
+  },
+  {
+    "Name": "GENERIC SENSOR 10",
+    "ID": 108,
+    "GroupID": 16
+  },
+  {
+    "Name": "TARGET LAMBDA",
+    "ID": 109,
+    "GroupID": 4
+  },
+  {
+    "Name": "NITROUS STAGE 1 OUTPUT STATE",
+    "ID": 110,
+    "GroupID": 20
+  },
+  {
+    "Name": "NITROUS STAGE 2 OUTPUT STATE",
+    "ID": 111,
+    "GroupID": 20
+  },
+  {
+    "Name": "NITROUS STAGE 3 OUTPUT STATE",
+    "ID": 112,
+    "GroupID": 20
+  },
+  {
+    "Name": "NITROUS STAGE 4 OUTPUT STATE",
+    "ID": 113,
+    "GroupID": 20
+  },
+  {
+    "Name": "NITROUS STAGE 5 OUTPUT STATE",
+    "ID": 114,
+    "GroupID": 20
+  },
+  {
+    "Name": "NITROUS STAGE 6 OUTPUT STATE",
+    "ID": 115,
+    "GroupID": 20
+  },
+  {
+    "Name": "TORQUE MANAGEMENT KNOB",
+    "ID": 116,
+    "GroupID": 19
+  },
+  {
+    "Name": "GEARBOX LINE PRESSURE",
+    "ID": 117,
+    "GroupID": 25
+  },
+  {
+    "Name": "INJECTION STAGE 3 DUTY CYCLE",
+    "ID": 118,
+    "GroupID": 16
+  },
+  {
+    "Name": "INJECTION STAGE 4 DUTY CYCLE",
+    "ID": 119,
+    "GroupID": 16
+  },
+  {
+    "Name": "CRANK CASE PRESSURE",
+    "ID": 120,
+    "GroupID": 2
+  },
+  {
+    "Name": "RACE TIMER",
+    "ID": 121,
+    "GroupID": 23
+  },
+  {
+    "Name": "IGNITION ANGLE BANK 1",
+    "ID": 122,
+    "GroupID": 10
+  },
+  {
+    "Name": "IGNITION ANGLE BANK 2",
+    "ID": 123,
+    "GroupID": 10
+  },
+  {
+    "Name": "TORQUE MANAGEMENT DRIVESHAFT RPM TARGET",
+    "ID": 124,
+    "GroupID": 0
+  },
+  {
+    "Name": "TORQUE MANAGEMENT DRIVESHAFT RPM TARGET ERROR",
+    "ID": 125,
+    "GroupID": 0
+  },
+  {
+    "Name": "TORQUE MANAGEMENT DRIVESHAFT RPM TARGET ERROR IGNITION CORRECTION",
+    "ID": 126,
+    "GroupID": 10
+  },
+  {
+    "Name": "TORQUE MANAGEMENT DRIVESHAFT RPM TIMED IGNITION CORRECTION",
+    "ID": 127,
+    "GroupID": 10
+  },
+  {
+    "Name": "TORQUE MANAGEMENT COMBINED IGNITION CORRECTION",
+    "ID": 128,
+    "GroupID": 10
+  },
+  {
+    "Name": "WIDEBAND SENSOR 5",
+    "ID": 129,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 6",
+    "ID": 130,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 7",
+    "ID": 131,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 8",
+    "ID": 132,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 9",
+    "ID": 133,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 10",
+    "ID": 134,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 11",
+    "ID": 135,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND SENSOR 12",
+    "ID": 136,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND OVERALL",
+    "ID": 137,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND BANK 1",
+    "ID": 138,
+    "GroupID": 4
+  },
+  {
+    "Name": "WIDEBAND BANK 2",
+    "ID": 139,
+    "GroupID": 4
+  },
+  {
+    "Name": "INJECTOR PRESSURE DIFFERENTIAL",
+    "ID": 140,
+    "GroupID": 27
+  },
+  {
+    "Name": "LAUNCH CONTROL",
+    "ID": 141,
+    "GroupID": 20
+  },
+  {
+    "Name": "TRACTION CONTROL",
+    "ID": 142,
+    "GroupID": 20
+  },
+  {
+    "Name": "OIL PRESSURE LIGHT",
+    "ID": 143,
+    "GroupID": 20
+  },
+  {
+    "Name": "PARK LIGHTS",
+    "ID": 144,
+    "GroupID": 20
+  },
+  {
+    "Name": "HIGH BEAM",
+    "ID": 145,
+    "GroupID": 20
+  },
+  {
+    "Name": "HAND BRAKE",
+    "ID": 146,
+    "GroupID": 20
+  },
+  {
+    "Name": "RIGHT INDICATOR",
+    "ID": 147,
+    "GroupID": 20
+  },
+  {
+    "Name": "LEFT INDICATOR",
+    "ID": 148,
+    "GroupID": 20
+  },
+  {
+    "Name": "AVI BATTERY",
+    "ID": 149,
+    "GroupID": 6
+  },
+  {
+    "Name": "CPU TEMPERATURE",
+    "ID": 150,
+    "GroupID": 24
+  },
+  {
+    "Name": "AMBIENT LIGHT VALUE",
+    "ID": 151,
+    "GroupID": 19
+  },
+  {
+    "Name": "ODOMETER",
+    "ID": 152,
+    "GroupID": 26
+  },
+  {
+    "Name": "TRIP METER 1",
+    "ID": 153,
+    "GroupID": 26
+  },
+  {
+    "Name": "TRIP METER 2",
+    "ID": 154,
+    "GroupID": 26
+  },
+  {
+    "Name": "DASH BRIGHTNESS",
+    "ID": 155,
+    "GroupID": 16
+  },
+  {
+    "Name": "FUEL LEVEL",
+    "ID": 156,
+    "GroupID": 156
+  },
+  {
+    "Name": "OIL TEMP",
+    "ID": 157,
+    "GroupID": 157
+  },
+  {
+    "Name": "COOLANT TEMP",
+    "ID": 158,
+    "GroupID": 158
+  },
+  {
+    "Name": "OIL PRESSURE",
+    "ID": 159,
+    "GroupID": 159
+  },
+  {
+    "Name": "FUEL LEVEL VOLTAGE",
+    "ID": 160,
+    "GroupID": 160
+  },
+  {
+    "Name": "OIL TEMP VOLTAGE",
+    "ID": 161,
+    "GroupID": 160
+  },
+  {
+    "Name": "COOLANT TEMP VOLTAGE",
+    "ID": 162,
+    "GroupID": 160
+  },
+  {
+    "Name": "OIL PRESSURE VOLTAGE",
+    "ID": 163,
+    "GroupID": 160
+  },
+  {
+    "Name": "FRONT LEFT TYRE PRESSURE",
+    "ID": 164,
+    "GroupID": 40
+  },
+  {
+    "Name": "FRONT RIGHT TYRE PRESSURE",
+    "ID": 165,
+    "GroupID": 40
+  },
+  {
+    "Name": "REAR LEFT TYRE PRESSURE",
+    "ID": 166,
+    "GroupID": 40
+  },
+  {
+    "Name": "REAR RIGHT TYRE PRESSURE",
+    "ID": 167,
+    "GroupID": 40
+  },
+  {
+    "Name": "FRONT LEFT TYRE TEMPERATURE",
+    "ID": 168,
+    "GroupID": 5
+  },
+  {
+    "Name": "FRONT RIGHT TYRE TEMPERATURE",
+    "ID": 169,
+    "GroupID": 5
+  },
+  {
+    "Name": "REAR LEFT TYRE TEMPERATURE",
+    "ID": 170,
+    "GroupID": 5
+  },
+  {
+    "Name": "REAR RIGHT TYRE TEMPERATURE",
+    "ID": 171,
+    "GroupID": 5
+  },
+  {
+    "Name": "FRONT LEFT TYRE SENSOR BATTERY VOLTAGE",
+    "ID": 172,
+    "GroupID": 30
+  },
+  {
+    "Name": "FRONT RIGHT TYRE SENSOR BATTERY VOLTAGE",
+    "ID": 173,
+    "GroupID": 30
+  },
+  {
+    "Name": "REAR LEFT TYRE SENSOR BATTERY VOLTAGE",
+    "ID": 174,
+    "GroupID": 30
+  },
+  {
+    "Name": "REAR RIGHT TYRE SENSOR BATTERY VOLTAGE",
+    "ID": 175,
+    "GroupID": 30
+  },
+  {
+    "Name": "FRONT TYRE RECOMMENDED PRESSURE",
+    "ID": 176,
+    "GroupID": 2
+  },
+  {
+    "Name": "REAR TYRE RECOMMENDED PRESSURE",
+    "ID": 177,
+    "GroupID": 2
+  },
+  {
+    "Name": "FRONT LEFT TYRE AIR LEAK DETECTED",
+    "ID": 178,
+    "GroupID": 20
+  },
+  {
+    "Name": "FRONT RIGHT TYRE AIR LEAK DETECTED",
+    "ID": 179,
+    "GroupID": 20
+  },
+  {
+    "Name": "REAR LEFT TYRE AIR LEAK DETECTED",
+    "ID": 180,
+    "GroupID": 20
+  },
+  {
+    "Name": "REAR RIGHT TYRE AIR LEAK DETECTED",
+    "ID": 181,
+    "GroupID": 20
+  },
+  {
+    "Name": "SPEED PULSE RATE",
+    "ID": 182,
+    "GroupID": 162
+  },
+  {
+    "Name": "PD16A-25A IO PIN 1 LOAD",
+    "ID": 183,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 1 VOLTAGE",
+    "ID": 184,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-25A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 185,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-25A IO PIN 2 LOAD",
+    "ID": 186,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 2 VOLTAGE",
+    "ID": 187,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-25A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 188,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-25A IO PIN 3 LOAD",
+    "ID": 189,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 3 VOLTAGE",
+    "ID": 190,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-25A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 191,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-25A IO PIN 4 LOAD",
+    "ID": 192,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 4 VOLTAGE",
+    "ID": 193,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-25A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 194,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 1 VOLTAGE",
+    "ID": 195,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 196,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 1 LOAD",
+    "ID": 197,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 1 STATE",
+    "ID": 198,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 1 STATE",
+    "ID": 199,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 2 VOLTAGE",
+    "ID": 200,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 201,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 3 LOAD",
+    "ID": 202,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 2 STATE",
+    "ID": 203,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 2 STATE",
+    "ID": 204,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 3 VOLTAGE",
+    "ID": 205,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 206,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 3 LOAD",
+    "ID": 207,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 3 STATE",
+    "ID": 208,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 3 STATE",
+    "ID": 209,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 4 VOLTAGE",
+    "ID": 210,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 211,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 4 LOAD",
+    "ID": 212,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-25A IO PIN 4 STATE",
+    "ID": 213,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 4 STATE",
+    "ID": 214,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 5 VOLTAGE",
+    "ID": 215,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 5 HIGH SIDE CURRENT",
+    "ID": 216,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 5 LOAD",
+    "ID": 217,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-8A IO PIN 5 STATE",
+    "ID": 218,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 6 VOLTAGE",
+    "ID": 219,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 6 HIGH SIDE CURRENT",
+    "ID": 220,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 6 LOAD",
+    "ID": 221,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-8A IO PIN 6 STATE",
+    "ID": 222,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 7 VOLTAGE",
+    "ID": 223,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 7 HIGH SIDE CURRENT",
+    "ID": 224,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 7 LOAD",
+    "ID": 225,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-8A IO PIN 7 STATE",
+    "ID": 226,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 8 VOLTAGE",
+    "ID": 227,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 8 HIGH SIDE CURRENT",
+    "ID": 228,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 8 LOAD",
+    "ID": 229,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-8A IO PIN 8 STATE",
+    "ID": 230,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 9 VOLTAGE",
+    "ID": 231,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 9 HIGH SIDE CURRENT",
+    "ID": 232,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 9 LOAD",
+    "ID": 233,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-8A IO PIN 9 STATE",
+    "ID": 234,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-8A IO PIN 10 VOLTAGE",
+    "ID": 235,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-8A IO PIN 10 HIGH SIDE CURRENT",
+    "ID": 236,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-8A IO PIN 10 LOAD",
+    "ID": 237,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16A-8A IO PIN 10 STATE",
+    "ID": 238,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-HBO IO PIN 1 STATE",
+    "ID": 239,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-HBO IO PIN 1 VOLTAGE",
+    "ID": 240,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-HBO IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 241,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16A-HBO IO PIN 2 STATE",
+    "ID": 242,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16A-HBO IO PIN 2 VOLTAGE",
+    "ID": 243,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16A-HBO IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 244,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-25A IO PIN 1 LOAD",
+    "ID": 245,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 1 VOLTAGE",
+    "ID": 246,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-25A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 247,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-25A IO PIN 2 LOAD",
+    "ID": 248,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 2 VOLTAGE",
+    "ID": 249,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-25A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 250,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-25A IO PIN 3 LOAD",
+    "ID": 251,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 3 VOLTAGE",
+    "ID": 252,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-25A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 253,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-25A IO PIN 4 LOAD",
+    "ID": 254,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 4 VOLTAGE",
+    "ID": 255,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-25A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 256,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 1 VOLTAGE",
+    "ID": 257,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 258,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 1 LOAD",
+    "ID": 259,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 1 STATE",
+    "ID": 260,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 1 STATE",
+    "ID": 261,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 2 VOLTAGE",
+    "ID": 262,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 263,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 3 LOAD",
+    "ID": 264,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 2 STATE",
+    "ID": 265,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 2 STATE",
+    "ID": 266,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 3 VOLTAGE",
+    "ID": 267,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 268,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 3 LOAD",
+    "ID": 269,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 3 STATE",
+    "ID": 270,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 3 STATE",
+    "ID": 271,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 4 VOLTAGE",
+    "ID": 272,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 273,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 4 LOAD",
+    "ID": 274,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-25A IO PIN 4 STATE",
+    "ID": 275,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 4 STATE",
+    "ID": 276,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 5 VOLTAGE",
+    "ID": 277,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 5 HIGH SIDE CURRENT",
+    "ID": 278,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 5 LOAD",
+    "ID": 279,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-8A IO PIN 5 STATE",
+    "ID": 280,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 6 VOLTAGE",
+    "ID": 281,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 6 HIGH SIDE CURRENT",
+    "ID": 282,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 6 LOAD",
+    "ID": 283,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-8A IO PIN 6 STATE",
+    "ID": 284,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 7 VOLTAGE",
+    "ID": 285,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 7 HIGH SIDE CURRENT",
+    "ID": 286,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 7 LOAD",
+    "ID": 287,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-8A IO PIN 7 STATE",
+    "ID": 288,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 8 VOLTAGE",
+    "ID": 289,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 8 HIGH SIDE CURRENT",
+    "ID": 290,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 8 LOAD",
+    "ID": 291,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-8A IO PIN 8 STATE",
+    "ID": 292,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 9 VOLTAGE",
+    "ID": 293,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 9 HIGH SIDE CURRENT",
+    "ID": 294,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 9 LOAD",
+    "ID": 295,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-8A IO PIN 9 STATE",
+    "ID": 296,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-8A IO PIN 10 VOLTAGE",
+    "ID": 297,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-8A IO PIN 10 HIGH SIDE CURRENT",
+    "ID": 298,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-8A IO PIN 10 LOAD",
+    "ID": 299,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16B-8A IO PIN 10 STATE",
+    "ID": 300,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-HBO IO PIN 1 STATE",
+    "ID": 301,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-HBO IO PIN 1 VOLTAGE",
+    "ID": 302,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-HBO IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 303,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16B-HBO IO PIN 2 STATE",
+    "ID": 304,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16B-HBO IO PIN 2 VOLTAGE",
+    "ID": 305,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16B-HBO IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 306,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-25A IO PIN 1 LOAD",
+    "ID": 307,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 1 VOLTAGE",
+    "ID": 308,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-25A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 309,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-25A IO PIN 2 LOAD",
+    "ID": 310,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 2 VOLTAGE",
+    "ID": 311,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-25A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 312,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-25A IO PIN 3 LOAD",
+    "ID": 313,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 3 VOLTAGE",
+    "ID": 314,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-25A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 315,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-25A IO PIN 4 LOAD",
+    "ID": 316,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 4 VOLTAGE",
+    "ID": 317,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-25A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 318,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 1 VOLTAGE",
+    "ID": 319,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 320,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 1 LOAD",
+    "ID": 321,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 1 STATE",
+    "ID": 322,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 1 STATE",
+    "ID": 323,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 2 VOLTAGE",
+    "ID": 324,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 325,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 3 LOAD",
+    "ID": 326,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 2 STATE",
+    "ID": 327,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 2 STATE",
+    "ID": 328,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 3 VOLTAGE",
+    "ID": 329,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 330,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 3 LOAD",
+    "ID": 331,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 3 STATE",
+    "ID": 332,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 3 STATE",
+    "ID": 333,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 4 VOLTAGE",
+    "ID": 334,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 335,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 4 LOAD",
+    "ID": 336,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-25A IO PIN 4 STATE",
+    "ID": 337,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 4 STATE",
+    "ID": 338,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 5 VOLTAGE",
+    "ID": 339,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 5 HIGH SIDE CURRENT",
+    "ID": 340,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 5 LOAD",
+    "ID": 341,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-8A IO PIN 5 STATE",
+    "ID": 342,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 6 VOLTAGE",
+    "ID": 343,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 6 HIGH SIDE CURRENT",
+    "ID": 344,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 6 LOAD",
+    "ID": 345,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-8A IO PIN 6 STATE",
+    "ID": 346,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 7 VOLTAGE",
+    "ID": 347,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 7 HIGH SIDE CURRENT",
+    "ID": 348,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 7 LOAD",
+    "ID": 349,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-8A IO PIN 7 STATE",
+    "ID": 350,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 8 VOLTAGE",
+    "ID": 351,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 8 HIGH SIDE CURRENT",
+    "ID": 352,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 8 LOAD",
+    "ID": 353,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-8A IO PIN 8 STATE",
+    "ID": 354,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 9 VOLTAGE",
+    "ID": 355,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 9 HIGH SIDE CURRENT",
+    "ID": 356,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 9 LOAD",
+    "ID": 357,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-8A IO PIN 9 STATE",
+    "ID": 358,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-8A IO PIN 10 VOLTAGE",
+    "ID": 359,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-8A IO PIN 10 HIGH SIDE CURRENT",
+    "ID": 360,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-8A IO PIN 10 LOAD",
+    "ID": 361,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16C-8A IO PIN 10 STATE",
+    "ID": 362,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-HBO IO PIN 1 STATE",
+    "ID": 363,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-HBO IO PIN 1 VOLTAGE",
+    "ID": 364,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-HBO IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 365,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16C-HBO IO PIN 2 STATE",
+    "ID": 366,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16C-HBO IO PIN 2 VOLTAGE",
+    "ID": 367,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16C-HBO IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 368,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-25A IO PIN 1 LOAD",
+    "ID": 369,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 1 VOLTAGE",
+    "ID": 370,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-25A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 371,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-25A IO PIN 2 LOAD",
+    "ID": 372,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 2 VOLTAGE",
+    "ID": 373,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-25A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 374,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-25A IO PIN 3 LOAD",
+    "ID": 375,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 3 VOLTAGE",
+    "ID": 376,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-25A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 377,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-25A IO PIN 4 LOAD",
+    "ID": 378,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 4 VOLTAGE",
+    "ID": 379,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-25A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 380,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 1 VOLTAGE",
+    "ID": 381,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 382,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 1 LOAD",
+    "ID": 383,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 1 STATE",
+    "ID": 384,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 1 STATE",
+    "ID": 385,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 2 VOLTAGE",
+    "ID": 386,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 387,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 3 LOAD",
+    "ID": 388,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 2 STATE",
+    "ID": 389,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 2 STATE",
+    "ID": 390,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 3 VOLTAGE",
+    "ID": 391,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 3 HIGH SIDE CURRENT",
+    "ID": 392,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 3 LOAD",
+    "ID": 393,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 3 STATE",
+    "ID": 394,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 3 STATE",
+    "ID": 395,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 4 VOLTAGE",
+    "ID": 396,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 4 HIGH SIDE CURRENT",
+    "ID": 397,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 4 LOAD",
+    "ID": 398,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-25A IO PIN 4 STATE",
+    "ID": 399,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 4 STATE",
+    "ID": 400,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 5 VOLTAGE",
+    "ID": 401,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 5 HIGH SIDE CURRENT",
+    "ID": 402,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 5 LOAD",
+    "ID": 403,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-8A IO PIN 5 STATE",
+    "ID": 404,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 6 VOLTAGE",
+    "ID": 405,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 6 HIGH SIDE CURRENT",
+    "ID": 406,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 6 LOAD",
+    "ID": 407,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-8A IO PIN 6 STATE",
+    "ID": 408,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 7 VOLTAGE",
+    "ID": 409,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 7 HIGH SIDE CURRENT",
+    "ID": 410,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 7 LOAD",
+    "ID": 411,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-8A IO PIN 7 STATE",
+    "ID": 412,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 8 VOLTAGE",
+    "ID": 413,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 8 HIGH SIDE CURRENT",
+    "ID": 414,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 8 LOAD",
+    "ID": 415,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-8A IO PIN 8 STATE",
+    "ID": 416,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 9 VOLTAGE",
+    "ID": 417,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 9 HIGH SIDE CURRENT",
+    "ID": 418,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 9 LOAD",
+    "ID": 419,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-8A IO PIN 9 STATE",
+    "ID": 420,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-8A IO PIN 10 VOLTAGE",
+    "ID": 421,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-8A IO PIN 10 HIGH SIDE CURRENT",
+    "ID": 422,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-8A IO PIN 10 LOAD",
+    "ID": 423,
+    "GroupID": 43
+  },
+  {
+    "Name": "PD16D-8A IO PIN 10 STATE",
+    "ID": 424,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-HBO IO PIN 1 STATE",
+    "ID": 425,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-HBO IO PIN 1 VOLTAGE",
+    "ID": 426,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-HBO IO PIN 1 HIGH SIDE CURRENT",
+    "ID": 427,
+    "GroupID": 42
+  },
+  {
+    "Name": "PD16D-HBO IO PIN 2 STATE",
+    "ID": 428,
+    "GroupID": 19
+  },
+  {
+    "Name": "PD16D-HBO IO PIN 2 VOLTAGE",
+    "ID": 429,
+    "GroupID": 41
+  },
+  {
+    "Name": "PD16D-HBO IO PIN 2 HIGH SIDE CURRENT",
+    "ID": 430,
+    "GroupID": 42
+  }
+]

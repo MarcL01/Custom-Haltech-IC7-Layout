@@ -1,0 +1,892 @@
+{
+  "Types": [
+    "Temperature",
+    "Pressure",
+    "Volume",
+    "Custom"
+  ],
+  "UnitTypes": {
+    "Temperature": [
+      "°C",
+      "°F",
+      "Custom"
+    ],
+    "Pressure": [
+      "kPa",
+      "kPaA",
+      "mbarA",
+      "bar",
+      "kg/cm²",
+      "psi",
+      "Custom"
+    ],
+    "Volume": [
+      "CC",
+      "L",
+      "US gal",
+      "Inj. lb",
+      "%",
+      "Custom"
+    ],
+    "Custom": [
+      "Custom"
+    ]
+  },
+  "Conversions": [
+    [
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 2731.0,
+        "y1": 0.0,
+        "x2": 3731.0,
+        "y2": 100.0,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 2731.0,
+        "y1": 32.0,
+        "x2": 3731.0,
+        "y2": 212.0,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "interpolation": null
+      }
+    ],
+    [
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 1013.25,
+        "y1": 0.0,
+        "x2": 2013.25,
+        "y2": 100.0,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1000.0,
+        "y2": 100.0,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1013.25,
+        "y2": 1013.25,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 2,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1000.0,
+        "y2": 1.0,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 2,
+        "smoothingFilter": 1,
+        "x1": 1013.25,
+        "y1": 0.0,
+        "x2": 2013.25,
+        "y2": 1.02,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 1,
+        "smoothingFilter": 1,
+        "x1": 1013.25,
+        "y1": 0.0,
+        "x2": 2013.25,
+        "y2": 14.50378,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "interpolation": null
+      }
+    ],
+    [
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1.0,
+        "y2": 100.0,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 1,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 10.0,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 1,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1000.0,
+        "y2": 26.4172,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1000.0,
+        "y2": 95.238095238095241,
+        "interpolation": null
+      },
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "interpolation": null
+      }
+    ],
+    [
+      {
+        "decimalPlaces": 0,
+        "smoothingFilter": 1,
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 1.0,
+        "y2": 1.0,
+        "interpolation": null
+      }
+    ]
+  ],
+  "Sensors": [
+    {
+      "Name": "Bosch PST-F1 Combined - Temperature",
+      "Type": 0,
+      "Unit": 0,
+      "Pullup": 1,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.33,
+          "y": 140.0
+        },
+        {
+          "x": 0.63,
+          "y": 110.0
+        },
+        {
+          "x": 0.97,
+          "y": 90.0
+        },
+        {
+          "x": 1.51,
+          "y": 70.0
+        },
+        {
+          "x": 2.25,
+          "y": 50.0
+        },
+        {
+          "x": 3.13,
+          "y": 30.0
+        },
+        {
+          "x": 3.94,
+          "y": 10.0
+        },
+        {
+          "x": 4.51,
+          "y": -10.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 1.14,
+          "y": 140.0
+        },
+        {
+          "x": 1.88,
+          "y": 110.0
+        },
+        {
+          "x": 2.5,
+          "y": 90.0
+        },
+        {
+          "x": 3.22,
+          "y": 70.0
+        },
+        {
+          "x": 3.87,
+          "y": 50.0
+        },
+        {
+          "x": 4.37,
+          "y": 30.0
+        },
+        {
+          "x": 4.7,
+          "y": 10.0
+        },
+        {
+          "x": 4.87,
+          "y": -10.0
+        }
+      ]
+    },
+    {
+      "Name": "GM Delco Generic Coolant Temperature",
+      "Type": 0,
+      "Unit": 0,
+      "Pullup": 1,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.45,
+          "y": 120.0
+        },
+        {
+          "x": 0.75,
+          "y": 100.0
+        },
+        {
+          "x": 0.97,
+          "y": 90.0
+        },
+        {
+          "x": 1.58,
+          "y": 70.0
+        },
+        {
+          "x": 2.45,
+          "y": 50.0
+        },
+        {
+          "x": 3.43,
+          "y": 30.0
+        },
+        {
+          "x": 4.21,
+          "y": 10.0
+        },
+        {
+          "x": 4.66,
+          "y": -10.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 1.46,
+          "y": 120.0
+        },
+        {
+          "x": 2.12,
+          "y": 100.0
+        },
+        {
+          "x": 2.5,
+          "y": 90.0
+        },
+        {
+          "x": 3.29,
+          "y": 70.0
+        },
+        {
+          "x": 4.0,
+          "y": 50.0
+        },
+        {
+          "x": 4.51,
+          "y": 30.0
+        },
+        {
+          "x": 4.78,
+          "y": 10.0
+        },
+        {
+          "x": 4.91,
+          "y": -10.0
+        }
+      ]
+    },
+    {
+      "Name": "GM Delco Generic Air Temperature",
+      "Type": 0,
+      "Unit": 0,
+      "Pullup": 1,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.45,
+          "y": 120.0
+        },
+        {
+          "x": 0.75,
+          "y": 100.0
+        },
+        {
+          "x": 0.97,
+          "y": 90.0
+        },
+        {
+          "x": 1.58,
+          "y": 70.0
+        },
+        {
+          "x": 2.45,
+          "y": 50.0
+        },
+        {
+          "x": 3.43,
+          "y": 30.0
+        },
+        {
+          "x": 4.21,
+          "y": 10.0
+        },
+        {
+          "x": 4.66,
+          "y": -10.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 1.46,
+          "y": 120.0
+        },
+        {
+          "x": 2.12,
+          "y": 100.0
+        },
+        {
+          "x": 2.5,
+          "y": 90.0
+        },
+        {
+          "x": 3.29,
+          "y": 70.0
+        },
+        {
+          "x": 4.0,
+          "y": 50.0
+        },
+        {
+          "x": 4.51,
+          "y": 30.0
+        },
+        {
+          "x": 4.78,
+          "y": 10.0
+        },
+        {
+          "x": 4.91,
+          "y": -10.0
+        }
+      ]
+    },
+    {
+      "Name": "Haltech 1/8 Motorsport Coolant Temperature",
+      "Type": 0,
+      "Unit": 0,
+      "Pullup": 1,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.41,
+          "y": 130.0
+        },
+        {
+          "x": 0.79,
+          "y": 100.0
+        },
+        {
+          "x": 1.22,
+          "y": 80.0
+        },
+        {
+          "x": 2.7,
+          "y": 40.0
+        },
+        {
+          "x": 3.57,
+          "y": 20.0
+        },
+        {
+          "x": 3.96,
+          "y": 10.0
+        },
+        {
+          "x": 4.52,
+          "y": -10.0
+        },
+        {
+          "x": 4.7,
+          "y": -20.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 1.36,
+          "y": 130.0
+        },
+        {
+          "x": 2.19,
+          "y": 100.0
+        },
+        {
+          "x": 2.87,
+          "y": 80.0
+        },
+        {
+          "x": 4.15,
+          "y": 40.0
+        },
+        {
+          "x": 4.56,
+          "y": 20.0
+        },
+        {
+          "x": 4.7,
+          "y": 10.0
+        },
+        {
+          "x": 4.88,
+          "y": -10.0
+        },
+        {
+          "x": 4.92,
+          "y": -20.0
+        }
+      ]
+    },
+    {
+      "Name": "Haltech 1/8 Motorsport Air Temperature",
+      "Type": 0,
+      "Unit": 0,
+      "Pullup": 1,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.41,
+          "y": 130.0
+        },
+        {
+          "x": 0.79,
+          "y": 100.0
+        },
+        {
+          "x": 1.22,
+          "y": 80.0
+        },
+        {
+          "x": 2.7,
+          "y": 40.0
+        },
+        {
+          "x": 3.57,
+          "y": 20.0
+        },
+        {
+          "x": 3.96,
+          "y": 10.0
+        },
+        {
+          "x": 4.52,
+          "y": -10.0
+        },
+        {
+          "x": 4.7,
+          "y": -20.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 1.36,
+          "y": 130.0
+        },
+        {
+          "x": 2.19,
+          "y": 100.0
+        },
+        {
+          "x": 2.87,
+          "y": 80.0
+        },
+        {
+          "x": 4.15,
+          "y": 40.0
+        },
+        {
+          "x": 4.56,
+          "y": 20.0
+        },
+        {
+          "x": 4.7,
+          "y": 10.0
+        },
+        {
+          "x": 4.88,
+          "y": -10.0
+        },
+        {
+          "x": 4.92,
+          "y": -20.0
+        }
+      ]
+    },
+    {
+      "Name": "Haltech 150°C High Range Temperature",
+      "Type": 0,
+      "Unit": 0,
+      "Pullup": 1,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 3.0,
+          "y": -30.0
+        },
+        {
+          "x": 4.1,
+          "y": 150.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 4.31,
+          "y": -30.0
+        },
+        {
+          "x": 4.75,
+          "y": 150.0
+        }
+      ]
+    },
+    {
+      "Name": "Bosch PST-F1 Combined - Pressure",
+      "Type": 1,
+      "Unit": 5,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.5,
+          "y": 0.0
+        },
+        {
+          "x": 4.5,
+          "y": 150.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "0-150psi Pressure",
+      "Type": 1,
+      "Unit": 5,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.5,
+          "y": 0.0
+        },
+        {
+          "x": 4.5,
+          "y": 150.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "0-250psi Pressure",
+      "Type": 1,
+      "Unit": 5,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.5,
+          "y": 0.0
+        },
+        {
+          "x": 4.5,
+          "y": 250.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "0-500psi Pressure",
+      "Type": 1,
+      "Unit": 5,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.5,
+          "y": 0.0
+        },
+        {
+          "x": 4.5,
+          "y": 500.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "0-2000psi Pressure",
+      "Type": 1,
+      "Unit": 5,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.5,
+          "y": 0.0
+        },
+        {
+          "x": 4.5,
+          "y": 2000.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "1 Bar MAP",
+      "Type": 1,
+      "Unit": 1,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.0,
+          "y": 1.3
+        },
+        {
+          "x": 4.72,
+          "y": 105.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "3 Bar MAP",
+      "Type": 1,
+      "Unit": 1,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.0,
+          "y": 1.3
+        },
+        {
+          "x": 4.9,
+          "y": 300.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "3 Bar Motorsport MAP",
+      "Type": 1,
+      "Unit": 1,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.0,
+          "y": 1.3
+        },
+        {
+          "x": 5.0,
+          "y": 317.2
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "4 Bar MAP",
+      "Type": 1,
+      "Unit": 1,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.0,
+          "y": 2.0
+        },
+        {
+          "x": 4.8,
+          "y": 401.3
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "4 Bar Motorsport MAP",
+      "Type": 1,
+      "Unit": 1,
+      "Pullup": 0,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 0.2,
+          "y": 20.0
+        },
+        {
+          "x": 4.8,
+          "y": 400.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "Haltech Keypad",
+      "Type": 3,
+      "Unit": 0,
+      "Pullup": 1,
+      "customSensor": 0,
+      "smoothingFilter": 10,
+      "interpolation": [
+        {
+          "x": 2.0,
+          "y": 1.0
+        },
+        {
+          "x": 4.0,
+          "y": 0.0
+        }
+      ],
+      "interpolation2": null
+    },
+    {
+      "Name": "Fuel Level - 0-90 Ohm",
+      "Type": 2,
+      "Unit": 4,
+      "Pullup": 1,
+      "customSensor": 1,
+      "smoothingFilter": 1000,
+      "interpolation": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.45,
+          "y": 100.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 1.46,
+          "y": 100.0
+        }
+      ]
+    },
+    {
+      "Name": "Fuel Level - 90-0 Ohm",
+      "Type": 2,
+      "Unit": 4,
+      "Pullup": 1,
+      "customSensor": 1,
+      "smoothingFilter": 1000,
+      "interpolation": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 0.45,
+          "y": 0.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 1.46,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "Name": "Fuel Level - 240-33 Ohm",
+      "Type": 2,
+      "Unit": 4,
+      "Pullup": 1,
+      "customSensor": 1,
+      "smoothingFilter": 1000,
+      "interpolation": [
+        {
+          "x": 0.968,
+          "y": 0.0
+        },
+        {
+          "x": 0.16,
+          "y": 100.0
+        }
+      ],
+      "interpolation2": [
+        {
+          "x": 2.5,
+          "y": 0.0
+        },
+        {
+          "x": 0.61,
+          "y": 100.0
+        }
+      ]
+    }
+  ]
+}
