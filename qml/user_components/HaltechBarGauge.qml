@@ -42,7 +42,7 @@ Item {
 	property real gaugeLowerRedStartValue: 0
 	property bool enableLowerRedStart : false	
 	property alias gaugeDirection : gauge.orientation
-	property string imageSource : null
+    property string imageSource : ""
 	property int imageX : 0
 	property int imageY : 0
 	property real gaugeValueFactor: 1
@@ -52,7 +52,7 @@ Item {
 	property color brightColor : "#ffdd14"
 	property color darkColor : "#776800"
 	property color backgroundColor : "white"
-	property color redColor : "red"
+    property color redColor : "red"
 	
 	function gaugeWarningColor() {
 	    var str = "";
@@ -128,7 +128,7 @@ Item {
 		height: 60
         horizontalAlignment: TextInput.AlignRight
 		z:1
-		text: displayText
+        text: dataMapValue
 		layer.enabled: true
         layer.effect: DropShadow {
             verticalOffset: 2

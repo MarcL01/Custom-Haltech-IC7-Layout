@@ -4,7 +4,6 @@ import QtQuick.Controls.Styles 1.4
 import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.3
 import QtQuick.Dialogs 1.2
-import QtQuick.Controls.Styles 1.4
 import QtQuick.Extras 1.4
 import Qt3D.Core 2.0
 import Qt3D.Render 2.0
@@ -12,8 +11,9 @@ import Qt3D.Render 2.0
 import "../../styles"
 import "../user_components"
 import "../factory_components"
-import DataMapAddressEnums 1.0
-//import "DataMapEnums.js" as DataMapAddress
+import "../custom_components"
+//import DataMapAddressEnums 1.0
+import "DataMapEnums.js" as DataMapAddress
 import "GaugeConfig.js" as GaugeConfig
 
 Item {
@@ -29,6 +29,8 @@ Item {
 	property bool dayTime: true
 	property color dayGaugeBackgroundColor : "#fcfcfc"
 	property color nightGaugeBackgroundColor : "#fcfcfc"	
+    property color screenBrightColor : "#ffdd14"
+    property color screenDarkColor   : "#7f6e0a"
 	property int sweeperRotation: -90
 	property int sweeperMaxRotation: -50
 	property int sweeperMinRotation: -180
@@ -40,6 +42,7 @@ Item {
     property int rpmLineHeight: 79
     property int rpmLineY: 0
 	property int valueFontSize: 48
+    property bool unusedVisible: false
 
     Keys.onSpacePressed:
     {
@@ -49,210 +52,94 @@ Item {
     Keys.onPressed: {
         if (event.key === Qt.Key_Up) {
             topLevelItem.upKeyPressed();
+            randVal1 = randVal1 * 1.1;
         } else if (event.key === Qt.Key_Down) {
             topLevelItem.downKeyPressed();
+            randVal1 = randVal1 * 0.9;
         }
     }
-	HaltechTellTaleLight {
-			id: parkLights
-			x: 0
-			y: 0
-			dataMapAddress: DataMapAddress.PARK_LIGHTS
-			dataMapValue: Math.round(topLevelItem.randVal1)
-			gaugeX: "1"
-			gaugeY: "1"
-	  }						
 	
 	// RPM bar with repeater
 	Item{
 		id: screen_07_RPM
-		x:0
-		y:0
-		z:1
-		FontLoader {
-			id: dinFont
-			source: "../../styles/DINCondensed-Bold.ttf"
-		}
-		property int rpmLine: 860 / ((screen_07_RPM_GAUGE.gaugeMaximumValue - screen_07_RPM_GAUGE.gaugeMinimumValue) / ((screen_07_RPM_GAUGE.gaugeMaximumValue > 100) ? 1000 : 1))
-		property int rpmLineW: 3
-		Row {
-			Repeater {
-				model: (screen_07_RPM_GAUGE.gaugeMaximumValue - screen_07_RPM_GAUGE.gaugeMinimumValue) / ((screen_07_RPM_GAUGE.gaugeMaximumValue > 100) ? 1000 : 1)
-				Item{
-					id: rpmDivider
-					x: 0 + (screen_07_RPM.rpmLine * index)
-					y: rpmLineY
-					z: 1
-					Rectangle {
-						id: rpmRect
-						width: screen_07_RPM.rpmLineW
-						height: rpmLineHeight
-						color: screen_07_gear.gaugeValueColor
-					}
-				}
-			}
-		}
-		Row {
-		Repeater {
-				model: (screen_07_RPM_GAUGE.gaugeMaximumValue - screen_07_RPM_GAUGE.gaugeMinimumValue) / ((screen_07_RPM_GAUGE.gaugeMaximumValue > 100) ? 250 : 0.25)
-				Item{
-					x: (screen_07_RPM.rpmLine * index) + (screen_07_RPM.rpmLine / 2)
-					y: rpmLineY
-					z: 1
-					Rectangle {
-						width: screen_07_RPM.rpmLineW
-						height: rpmLineHeight
-						color: screen_07_gear.gaugeValueColor
-						opacity: 0.1
-					}
-				}
-			}
-		}		
-		Row {
-			Repeater {
-				model: (screen_07_RPM_GAUGE.gaugeMaximumValue - screen_07_RPM_GAUGE.gaugeMinimumValue)  / ((screen_07_RPM_GAUGE.gaugeMaximumValue > 100) ? 1000 : 1) + 1
-				Item{
-					x: (index < 10) ? ((screen_07_RPM.rpmLine * index) - 25) : ((screen_07_RPM.rpmLine * index) - 40)
-					y: rpmLineY + 90 - valueFontSize
-					z: 1
-					Text {
-						//font: Qt.font({ family: 'DINCondensed-Bold', pixelSize: 16, weight: Font.Bold, capitalization: Font.AllUppercase })
-						font.weight : Font.Bold
-						font.family: dinFont.name
-						font.pixelSize: valueFontSize
-						horizontalAlignment: Text.AlignRight
-						z: 1
-						color: screen_07_gear.gaugeValueColor
-						text: screen_07_RPM_GAUGE.gaugeMinimumValue + index
-					}
-				}
-			}
-		}		
+        x:20
+        y:35
+        z:1
 		// Hidden to make the segments work...
-		HaltechBarGauge{
+        C8RpmGauge {
 			id: screen_07_RPM_GAUGE
 			property string gaugeSelectedunit : ""
 			x: 0
-			y: 0
-			z: -999
-			width: 0
-			height: 0
-			dataMapAddress: DataMapAddress.RPM
-			dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1 * 1)
-			labelX:0
-			labelY:0
-			labelColor: "black"
-			dataMapLabel: "RPM X1000"
-			unitFontSize: 12
-			gaugeDirection: Qt.Horizontal
-			gaugeValueFactor: 1000
-			gaugeX : 0
-			gaugeY : 0
-			gaugeHeight: 1
-			gaugeWidth: 1
-			gaugeMaximumValue: 4
-			gaugeMinimumValue: 0
-			gaugeRedStartValue: 3.5
-			gaugePrecision: 5
-			valueFontSize: 1
+            y: 0
+            /* Start Color Pallet */
+            property color dayDarkColor : screenDarkColor
+            property color nightDarkColor : screenDarkColor
+            property color dayBrightColor : screenBrightColor
+            property color nightBrightColor : screenBrightColor
+            property color dayLabelColor : "white"
+            property color nightLabelColor : "white"
+            property color dayRedColor : "red"
+            property color nightRedColor : "red"
+            property color dayBackgroundColor : screenDarkColor
+            property color nightBackgroundColor : screenDarkColor
+            darkColor: (topLevelItem.dayTime) ? dayDarkColor : nightDarkColor
+            brightColor: (topLevelItem.dayTime) ? dayBrightColor : nightBrightColor
+            redColor: (topLevelItem.dayTime) ? dayRedColor : nightRedColor
+            backgroundColor: (topLevelItem.dayTime) ? dayBackgroundColor : nightBackgroundColor
+        /* End Color Pallet */
+            width: 820
+            height: 35
+            dataMapAddress: DataMapAddress.RPM
+            dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1)
+            dataMapLabel: "RPM X1000"
+            unitFontSize: 0
+            gaugeValueFactor: 1
+            gaugeMaximumValue: 10000
+            gaugeMinimumValue: 0
+            gaugeRedStartValue: 8500
+            gaugePrecision: 5
+            valueFontSize: 0
 			Component.onCompleted:
 			{
 				GaugeConfig.initGauge(screen_07_RPM_GAUGE,"screen_07_RPM_GAUGE");
 			}			
 		}
-		ProgressBar {
-		   z: 40
-           property int dataMapAddress
-           property real dataMapValue
-		   property real gaugeMaximumValue
-		   dataMapAddress: DataMapAddress.RPM
-		   dataMapValue: topLevelItem.randVal1
-		   gaugeMaximumValue: screen_07_RPM_GAUGE.gaugeMaximumValue
-           id: control
-           value: 1 - dataMapValue / gaugeMaximumValue / 1000
-           height: 80
-           clip: true
-           background: Rectangle {
-				z: 40
-                implicitWidth: 860
-                implicitHeight: 79
-                color: "transparent"
-                radius: 0
-            }
-            contentItem: Item {
-                implicitWidth: 860
-                implicitHeight: 80
 
-                Rectangle {
-					anchors.right: parent.right
-					anchors.rightMargin: 0
-					z: 999
-                    id: bar
-                    width: control.value * parent.width
-                    height: parent.height
-					transformOrigin: Item.Right
-                    radius: 0
-                    color: Qt.darker(mainColor)
-                }
-            }
-
-			
-
-		}
 	}
 	// Gear Display
 	Item {
 		id: gearArea
-		x: 360
-		y: 85
+        x: parent.width / 2
+        y: 165
 		opacity: 1.0
 		z: 4
-		HaltechBigNumericGauge{
-					anchors.top: parent.top
-					id: screen_07_gear
-					x: 0
-					y: 0
-					height: 200
-					width: 100
-					/* Start Color Pallet */
-				    property color dayValueColor : "black"
-					property color nightValueColor : "black"
-					property color dayUnitColor : "silver"
-					property color nightUnitColor : "silver"				
-					property color dayLabelColor : "black"
-					property color nightLabelColor : "black"
-					property color dayValueRedColor : "red"
-					property color nightValueRedColor : "red"
-					
-					gaugeValueColor: (topLevelItem.dayTime) ? dayValueColor : nightValueColor
-					gaugeValueRedColor: (topLevelItem.dayTime) ? dayValueRedColor : nightValueRedColor					
-					labelColor: (topLevelItem.dayTime) ? dayLabelColor : nightLabelColor
-					unitColor: (topLevelItem.dayTime) ? dayUnitColor : nightUnitColor
-					/* End Color Pallet */
-					//width: 140
-					//height: 200			
-					dataMapAddress: DataMapAddress.GEAR
-					dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1)
-					dataMapLabel: "Gear"
-					alignment: TextInput.AlignCenter
-					gaugeUnit: ""
-					gaugeValueFactor: 1
-					valueX: 26
-					valueY: 10
-					labelX: 90
-					labelY: 172
-					labelFontSize: 22
-					valueFontSize: 150
-					gaugeLabelItalic : false
-					gaugeItalic : false
-					gaugeMinimumValue: -1
-					gaugeMaximumValue: 6
-					Component.onCompleted:
-					{
-						GaugeConfig.initGauge(screen_07_gear,"screen_07_gear");
-					}			
-					
-				}			
+        C8GearIndicator{
+            anchors.top: parent.top
+            id: screen_07_gear
+            x: 0
+            y: 0
+            width: 100
+            dataMapAddress: DataMapAddress.GEAR
+            dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1)
+            dataMapLabel: "Gear"
+            gaugeValueFactor: 1
+            gaugeMinimumValue: -3
+            gaugeMaximumValue: 6
+            Component.onCompleted:
+            {
+                GaugeConfig.initGauge(screen_07_gear,"screen_07_gear");
+            }
+
+        }
+
+        Rectangle {
+            anchors.top: screen_07_gear.bottom
+            anchors.topMargin: 65
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 120
+            height: 2
+            color: "white"
+        }
 	}
 	Item {
 		id: indicatorArea
@@ -260,10 +147,10 @@ Item {
 		y: 300
 		opacity: 1.0
 		z: 4
-		HaltechTellTaleLight {
+        HaltechTellTaleLight {
 					id: screen_07_18
 					x: 0
-					y: 0
+                    y: 40
 					dataMapAddress: DataMapAddress.LAUNCH_CONTROL_LIGHT
 					dataMapValue: Math.round(topLevelItem.randVal1)
 					gaugeImage: "../../images/drag.png"
@@ -271,11 +158,18 @@ Item {
 					gaugeOffColor: "#11111111"
 					gaugeX: "50"
 					gaugeY: "50"
+
+                    transform: Scale {
+                        origin.x: screen_07_18.width / 2
+                        origin.y: screen_07_18.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_19
 					x: 55
-					y: 0
+                    y: 40
 					dataMapAddress: DataMapAddress.NITROUS_STAGE_1_OUTPUT_STATE
 					dataMapValue: Math.round(topLevelItem.randVal1)
 					gaugeImage: "../../images/nos.png"
@@ -283,11 +177,18 @@ Item {
 					gaugeOffColor: "#11111111"
 					gaugeX: "60"
 					gaugeY: "60"
+
+                    transform: Scale {
+                        origin.x: screen_07_19.width / 2
+                        origin.y: screen_07_19.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_20
 					x: 0
-					y: 70
+                    y: 90
 					dataMapAddress: DataMapAddress.CHECK_ENGINE_LIGHT
 					dataMapValue: Math.round(topLevelItem.randVal1)
 					gaugeImage: "../../images/cel.png"
@@ -295,11 +196,18 @@ Item {
 					gaugeOffColor: "#11111111"
 					gaugeX: "50"
 					gaugeY: "50"
+
+                    transform: Scale {
+                        origin.x: screen_07_20.width / 2
+                        origin.y: screen_07_20.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_21
 					x: 60
-					y: 70
+                    y: 90
 					dataMapAddress: DataMapAddress.BATTERY_LIGHT_ACTIVE
 					dataMapValue: Math.round(topLevelItem.randVal1)
 					gaugeImage: "../../images/batt.png"
@@ -307,6 +215,13 @@ Item {
 					gaugeOffColor: "#11111111"
 					gaugeX: "50"
 					gaugeY: "50"
+
+                    transform: Scale {
+                        origin.x: screen_07_21.width / 2
+                        origin.y: screen_07_21.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_22
@@ -319,6 +234,13 @@ Item {
 					gaugeOffColor: "#11111111"
 					gaugeX: "50"
 					gaugeY: "50"
+
+                    transform: Scale {
+                        origin.x: screen_07_22.width / 2
+                        origin.y: screen_07_22.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_23
@@ -331,12 +253,19 @@ Item {
 					gaugeOffColor: "#11111111"
 					gaugeX: "50"
 					gaugeY: "50"
+
+                    transform: Scale {
+                        origin.x: screen_07_23.width / 2
+                        origin.y: screen_07_23.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 	}
 	Item {
 		id: floatingIndicators
 		x: 0
-		y: 0
+        y: -15
 		z: 10
 		width: 860
 		height: 80
@@ -351,6 +280,13 @@ Item {
 					gaugeOffColor: "#00000000"
 					gaugeX: "80"
 					gaugeY: "80"
+
+                    transform: Scale {
+                        origin.x: screen_07_24.width / 2
+                        origin.y: screen_07_24.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_25
@@ -363,6 +299,13 @@ Item {
 					gaugeOffColor: "#00000000"
 					gaugeX: "80"
 					gaugeY: "80"
+
+                    transform: Scale {
+                        origin.x: screen_07_25.width / 2
+                        origin.y: screen_07_25.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_26
@@ -375,6 +318,13 @@ Item {
 					gaugeOffColor: "#00000000"
 					gaugeX: "80"
 					gaugeY: "80"
+
+                    transform: Scale {
+                        origin.x: screen_07_26.width / 2
+                        origin.y: screen_07_26.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 		HaltechTellTaleLight {
 					id: screen_07_27
@@ -387,6 +337,13 @@ Item {
 					gaugeOffColor: "#00000000"
 					gaugeX: "80"
 					gaugeY: "80"
+
+                    transform: Scale {
+                        origin.x: screen_07_27.width / 2
+                        origin.y: screen_07_27.height / 2
+                        xScale: .5
+                        yScale: .5
+                    }
 				}
 	}
 	
@@ -396,6 +353,7 @@ Item {
 		y: 85
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_02
@@ -448,54 +406,42 @@ Item {
 	}
 	Item {
 		id: firstRowTwo
-		x: 180
-		y: 85
+        x: parent.width * .25
+        y: 400
 		opacity: 1.0
 		z: 4
-		HaltechBigNumericGauge {
+        C8BottomBarGauge {
 					//anchors.top: parent.bottom
-					id: screen_07_03
-					x: 0
-					y: 0
-					width: 180
-					height: 100			
-					/* Start Color Pallet */
-				    property color dayValueColor : "black"
-					property color nightValueColor : "black"
-					property color dayUnitColor : "silver"
-					property color nightUnitColor : "silver"				
-					property color dayLabelColor : "black"
-					property color nightLabelColor : "black"
-					property color dayValueRedColor : "red"
-					property color nightValueRedColor : "red"
-					
-					gaugeValueColor: (topLevelItem.dayTime) ? dayValueColor : nightValueColor
-					gaugeValueRedColor: (topLevelItem.dayTime) ? dayValueRedColor : nightValueRedColor					
-					labelColor: (topLevelItem.dayTime) ? dayLabelColor : nightLabelColor
-					unitColor: (topLevelItem.dayTime) ? dayUnitColor : nightUnitColor
-					/* End Color Pallet */
-					dataMapAddress: DataMapAddress.RPM
-					dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1)
-					dataMapLabel: "RPM"
-					alignment: TextInput.AlignRight
-					valignment: TextInput.AlignRight
-					ualignment: TextInput.AlignLeft
-					unitX: 5
-					unitY: 5
-					gaugeUnit: ""
-					gaugeValueFactor: 1
-					valueX: -8
-					valueY: 8
-					labelX: -10
-					labelY: 72
-					labelFontSize: 22
-					valueFontSize: 62
-					unitFontSize: 22
-					gaugeLabelItalic : false
-					gaugeItalic : false
-					gaugeMinimumValue: 0
-					gaugeMaximumValue: 9999
-					//gaugeDecimalPlaces: 0
+                    id: screen_07_03
+                    property string gaugeSelectedunit : ""
+                    x: 0
+                    y: 0
+                    /* Start Color Pallet */
+                    property color dayDarkColor : screenDarkColor
+                    property color nightDarkColor : screenDarkColor
+                    property color dayBrightColor : screenBrightColor
+                    property color nightBrightColor : screenBrightColor
+                    property color dayLabelColor : "white"
+                    property color nightLabelColor : "white"
+                    property color dayRedColor : "red"
+                    property color nightRedColor : "red"
+                    property color dayBackgroundColor : screenDarkColor
+                    property color nightBackgroundColor : screenDarkColor
+                    darkColor: (topLevelItem.dayTime) ? dayDarkColor : nightDarkColor
+                    brightColor: (topLevelItem.dayTime) ? dayBrightColor : nightBrightColor
+                    redColor: (topLevelItem.dayTime) ? dayRedColor : nightRedColor
+                    backgroundColor: (topLevelItem.dayTime) ? dayBackgroundColor : nightBackgroundColor
+                /* End Color Pallet */
+                    dataMapAddress: DataMapAddress.RPM
+                    dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1)
+                    dataMapLabel: "RPM X1000"
+                    unitFontSize: 0
+                    gaugeValueFactor: 1
+                    gaugeMaximumValue: 10000
+                    gaugeMinimumValue: 0
+                    gaugeRedStartValue: 8500
+                    gaugePrecision: 5
+                    valueFontSize: 25
 					Component.onCompleted:
 					{
 						GaugeConfig.initGauge(screen_07_03,"screen_07_03");
@@ -508,6 +454,7 @@ Item {
 		y: 85
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_04
@@ -564,6 +511,7 @@ Item {
 		y: 85
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_05
@@ -620,6 +568,7 @@ Item {
 		y: 185
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_06
@@ -672,59 +621,31 @@ Item {
 	}
 	Item {
 		id: secondRowTwo
-		x: 180
-		y: 185
+        x: parent.width / 2
+        y: 225
 		opacity: 1.0
 		z: 4
-		HaltechBigNumericGauge {
-					//anchors.top: parent.bottom
-					id: screen_07_07
-					x: 0
-					y: 0
-					width: 180
-					height: 100			
-					/* Start Color Pallet */
-				    property color dayValueColor : "black"
-					property color nightValueColor : "black"
-					property color dayUnitColor : "silver"
-					property color nightUnitColor : "silver"				
-					property color dayLabelColor : "black"
-					property color nightLabelColor : "black"
-					property color dayValueRedColor : "red"
-					property color nightValueRedColor : "red"
-					
-					gaugeValueColor: (topLevelItem.dayTime) ? dayValueColor : nightValueColor
-					gaugeValueRedColor: (topLevelItem.dayTime) ? dayValueRedColor : nightValueRedColor					
-					labelColor: (topLevelItem.dayTime) ? dayLabelColor : nightLabelColor
-					unitColor: (topLevelItem.dayTime) ? dayUnitColor : nightUnitColor
-					/* End Color Pallet */
-					dataMapAddress: DataMapAddress.RPM
-					dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1)
-					dataMapLabel: "RPM"
-					alignment: TextInput.AlignRight
-					valignment: TextInput.AlignRight
-					ualignment: TextInput.AlignLeft
-					unitX: 5
-					unitY: 5
-					gaugeUnit: ""
-					gaugeValueFactor: 1
-					valueX: -8
-					valueY: 8
-					labelX: -10
-					labelY: 72
-					labelFontSize: 22
-					valueFontSize: 62
-					unitFontSize: 22
-					gaugeLabelItalic : false
-					gaugeItalic : false
-					gaugeMinimumValue: 0
-					gaugeMaximumValue: 9999
-					//gaugeDecimalPlaces: 0
-					Component.onCompleted:
-					{
-						GaugeConfig.initGauge(screen_07_07,"screen_07_07");
-					}			
-				}	
+        C8SpeedGauge {
+            //anchors.top: parent.bottom
+            id: screen_07_07
+            x: 0
+            y: 0
+            dataMapAddress: DataMapAddress.RPM
+            dataMapValue: (gaugeMinimumValue + (gaugeMaximumValue - gaugeMinimumValue ) * topLevelItem.randVal1)
+            dataMapLabel: "RPM"
+            gaugeUnit: ""
+            gaugeValueFactor: 1
+            unitFontSize: 22
+            gaugeLabelItalic : false
+            gaugeItalic : false
+            gaugeMinimumValue: 0
+            gaugeMaximumValue: 9999
+            //gaugeDecimalPlaces: 0
+            Component.onCompleted:
+            {
+                GaugeConfig.initGauge(screen_07_07,"screen_07_07");
+            }
+        }
 	}
 	Item {
 		id: secondRowThree
@@ -732,6 +653,7 @@ Item {
 		y: 185
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_08
@@ -844,6 +766,7 @@ Item {
 		y: 285
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_10
@@ -900,6 +823,7 @@ Item {
 		y: 285
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_11
@@ -956,6 +880,7 @@ Item {
 		y: 285
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_12
@@ -1068,6 +993,7 @@ Item {
 		y: 385
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_14
@@ -1124,6 +1050,7 @@ Item {
 		y: 385
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_15
@@ -1180,6 +1107,7 @@ Item {
 		y: 385
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_16
@@ -1236,6 +1164,7 @@ Item {
 		y: 385
 		opacity: 1.0
 		z: 4
+        visible: unusedVisible
 		HaltechBigNumericGauge {
 					//anchors.top: parent.bottom
 					id: screen_07_17
@@ -1308,18 +1237,7 @@ Item {
             y: 0
 			z: 2
             opacity: 1.0
-            source: "../../images/DigitalMitch.png"
-			}
-		Image {
-			id: bg2
-			width: 860
-			height: 480
-			smooth: true
-			x: 0
-			y: 0
-			z: 1
-			opacity: 0.25
-			source: "../../images/haltech_bg.png"
-			}		
+            source: "../../images/C8Background.png"
+        }
 	}		
 }
