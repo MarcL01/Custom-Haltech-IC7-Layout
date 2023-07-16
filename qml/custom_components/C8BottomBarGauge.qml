@@ -232,6 +232,8 @@ Item {
                 smooth: true
                 opacity: 1.0
                 source: imageSource
+                width: 30
+                height: 30
             }
 
             Rectangle {

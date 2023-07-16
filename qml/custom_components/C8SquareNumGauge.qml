@@ -36,13 +36,7 @@ Item {
     property int gaugeDecimalPlaces : 1
     property bool gaugeItalic : true
     property bool gaugeLabelItalic : true
-    property alias gaugeImage: gaugeImage
     property alias imageSource: gaugeImage.source
-    property alias imageOpacity: gaugeImage.opacity
-    property alias imageX: gaugeRect.x
-    property alias imageY: gaugeRect.y
-    property alias imageWidth: gaugeRect.width
-    property alias imageHeight: gaugeRect.height
 
     property real gaugeValueFactor: 1
 
@@ -96,71 +90,69 @@ Item {
 
     Rectangle {
         id: gaugeRect
-        radius: 20
-        rotation: 90
+        radius: 2.5
         gradient: Gradient {
-            GradientStop { position: 0.0; color: Qt.rgba(255, 255, 255, .20) }
+            GradientStop { position: 0.0; color: Qt.rgba(255, 255, 255, .12) }
 //                        GradientStop { position: 0.33; color: "yellow" }
-            GradientStop { position: 1.0; color: Qt.rgba(255, 255, 255, 0) }
+            GradientStop { position: 1; color: Qt.rgba(255, 255, 255, .001) }
         }
 
-        height: 170
-        width: 110
+        height: 110
+        width: 170
+
+        Image {
+            anchors.horizontalCenter: parent.horizontalCenter
+            y: 2.5
+            id: gaugeImage
+            width: 40
+            height: 40
+        }
 
         Item {
             anchors.horizontalCenter: parent.horizontalCenter
-            rotation: -90
+            y: 20
+//            anchors.top: gaugeImage.bottom
 
-            Column {
+            Text {
+                id: textValue
                 anchors.horizontalCenter: parent.horizontalCenter
+                color: gaugeWarningColor()
+                property color bgColor: "#00000000"
+                property color borderColor: "#4286f4"
+                property int borderRadius: 0
+                property int borderWidth: 0
+//                    horizontalAlignment: TextInput.AlignHCenter
+                z:3
+                text: displayText
+                readonly property string displayText: formatNumber()
+                font.pointSize: valueFontSize
+                font.family: CustomFonts.rajdhani.name
+                font.styleName: CustomFonts.rajdhaniMedium
+                font.italic: true
+                minimumPointSize: 5
+                fontSizeMode: Text.Fit
+                //(dataMapAddress == 1 ) ? ((gaugeMaximumValue < 50) ? dataMapValue * 1000 : dataMapValue ): dataMapValue.toPrecision(gaugePrecision)
+            }
 
-                Image {
-                    id: gaugeImage
-                }
-
-                Item {
-                    anchors.horizontalCenter: parent.horizontalCenter
-
-                    Text {
-                        id: textValue
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        color: gaugeWarningColor()
-                        property color bgColor: "#00000000"
-                        property color borderColor: "#4286f4"
-                        property int borderRadius: 0
-                        property int borderWidth: 0
-    //                    horizontalAlignment: TextInput.AlignHCenter
-                        z:3
-                        text: displayText
-                        readonly property string displayText: formatNumber()
-                        font.pointSize: valueFontSize
-                        font.family: CustomFonts.rajdhani.name
-                        font.styleName: CustomFonts.rajdhaniMedium
-                        font.italic: true
-                        minimumPointSize: 5
-                        fontSizeMode: Text.Fit
-                        //(dataMapAddress == 1 ) ? ((gaugeMaximumValue < 50) ? dataMapValue * 1000 : dataMapValue ): dataMapValue.toPrecision(gaugePrecision)
-                    }
-
-                    Text {
-                        id: textUnit
-                        anchors.left: textValue.right
-                        anchors.verticalCenter: textValue.verticalCenter
-                        font.family: CustomFonts.rajdhani.name
-                        font.pixelSize: unitFontSize
-                        font.italic: gaugeLabelItalic
-                        color: "#00da75"
-                        property color bgColor: "#00000000"
-                        property color borderColor: "#4286f4"
-                        property int borderRadius: 0
-                        property int borderWidth: 0
-    //                    horizontalAlignment: TextInput.AlignLeft
-    //                    verticalAlignment: TextInput.AlignVCenter
-                        z:2
-                        visible: true
-                    }
-                }
+            Text {
+                id: textUnit
+                anchors.left: textValue.right
+                anchors.verticalCenter: textValue.verticalCenter
+                font.family: CustomFonts.rajdhani.name
+                font.pixelSize: unitFontSize
+                font.italic: gaugeLabelItalic
+                color: "#00da75"
+                property color bgColor: "#00000000"
+                property color borderColor: "#4286f4"
+                property int borderRadius: 0
+                property int borderWidth: 0
+//                    horizontalAlignment: TextInput.AlignLeft
+//                    verticalAlignment: TextInput.AlignVCenter
+                z:2
+                visible: true
             }
         }
     }
+
+
 }
