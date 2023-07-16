@@ -76,16 +76,6 @@ Item {
         return str;
     }
 
-    FontLoader {
-        id: rajdhaniFont
-        source: "../../styles/Rajdhani-SemiBold.ttf"
-    }
-
-    FontLoader {
-        id: rajdhaniBoldFont
-        source: "../../styles/Rajdhani-Bold.ttf"
-    }
-
     Text {
         id: textValue
         anchors.top: parent.top
@@ -101,7 +91,8 @@ Item {
         text: displayText
         readonly property string displayText: formatNumber()
         font.pixelSize: 80
-        font.family: rajdhaniFont.name
+        font.family: CustomFonts.rajdhani.name
+        font.styleName: CustomFonts.rajdhaniRegular
         font.italic: true
         minimumPointSize: 5
         fontSizeMode: Text.Fit
@@ -111,8 +102,8 @@ Item {
         anchors.top: parent.top
         anchors.topMargin: 75
         anchors.horizontalCenter: parent.horizontalCenter
-        font.family: rajdhaniBoldFont.name
-        font.weight: Font.DemiBold
+        font.family: CustomFonts.rajdhani.name
+        font.styleName: CustomFonts.rajdhaniSemiBold
         font.pixelSize: unitFontSize
         font.italic: gaugeLabelItalic
         font.capitalization: Font.AllUppercase

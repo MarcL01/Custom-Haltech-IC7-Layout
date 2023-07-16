@@ -31,7 +31,6 @@ Item {
     property real gaugeValueFactor: 1
     property int gaugePrecision : 3
     property int gaugeDecimalPlaces : 0
-    property string gaugeSelectedUnit : ""
     property color brightColor : "#ffdd14"
     property color darkColor : "#776800"
     property color backgroundColor : "white"
@@ -58,10 +57,6 @@ Item {
         if (index === 0) {
             return Qt.rgba(255, 255, 255, .25)
         } else if (index === 1) {
-            return "yellow"
-        } else if (index === 2) {
-            return "orange"
-        } else {
             return "red"
         }
     }
@@ -69,26 +64,21 @@ Item {
     property int numOfSteps: (gaugeMaximumValue - gaugeMinimumValue) / gaugeStyleTickmarkStepSize
 
     property real numToRedZone: gaugeRedStartValue / gaugeStyleTickmarkStepSize
-    property real numToOrangeZone: numToRedZone - 1
-    property real numToYellowZone: numToRedZone - 2
 
     function getLengthByIndex(parentComp, index) {
-        var widthPerStep = (parentComp.width / numOfSteps)-2.2
+        var widthPerStep = (parentComp.height / numOfSteps)
         if (index === 0) {
             if (!enableRedStart || (gaugeRedStartValue > gaugeMaximumValue && gaugeRedStartValue < gaugeMinimumValue)) {
                 return parentComp.height
             }
 
-            const numToYellow = numToRedZone - 2
-            return widthPerStep * numToYellow
-        } else if (index === 1 || index === 2) {
-            return widthPerStep
-        } else if (index === 3) {
+            return widthPerStep * numToRedZone
+        } else if (index === 1) {
             return (numOfSteps - numToRedZone) * widthPerStep
         }
     }
 
-    property bool flipX : true
+    property bool flipX : false
 
     states: [
         State {
@@ -119,14 +109,8 @@ Item {
         }
     ]
 
-    FontLoader {
-        id: rajdhaniFont
-        source: "../../styles/Rajdhani-SemiBold.ttf"
-    }
-
     Gauge {
-        x: 0
-        y: 0
+        anchors.horizontalCenter: parent.horizontalCenter
         width: gaugeWidth
         height: gaugeHeight
         id: gauge
@@ -135,6 +119,7 @@ Item {
         maximumValue: gaugeMaximumValue.toPrecision(gaugePrecision)
         orientation: Qt.Horizontal
         property real redStartValue : gaugeRedStartValue.toPrecision(gaugePrecision)
+        property real lowerRedStartValue : gaugeLowerRedStartValue.toPrecision((gaugePrecision))
         tickmarkStepSize: gaugeMaximumValue / 4
         minorTickmarkCount: 0
         value : (dataMapValue / gaugeValueFactor)
@@ -182,7 +167,7 @@ Item {
                 spacing: 0
 
                 Repeater {
-                    model: !enableRedStart || (gaugeRedStartValue > gaugeMaximumValue && gaugeRedStartValue < gaugeMinimumValue) ? 1 : 4
+                    model: !enableRedStart || (gaugeRedStartValue > gaugeMaximumValue && gaugeRedStartValue < gaugeMinimumValue) ? 1 : 2
 
 
                     Rectangle {
@@ -220,7 +205,8 @@ Item {
                     x: (gaugeHeight * -1) - 6
                     width: 4
                     height: 2
-                    color: (styleData.value < gauge.redStartValue) ? "white" : redColor
+                    color: (styleData.value >= gauge.redStartValue && enableRedStart) ? redColor :
+                            (styleData.value <= gauge.lowerRedStartValue && enableLowerRedStart) ? redColor : "white"
                 }
             }
             tickmarkLabel: null
@@ -270,7 +256,8 @@ Item {
             anchors.rightMargin: flipX ? 4 : 0
             anchors.leftMargin : flipX ? 0 : 4
             font.weight : Font.Medium
-            font.family: rajdhaniFont.name
+            font.family: CustomFonts.rajdhani.name
+            font.styleName: CustomFonts.rajdhaniSemiBold
             font.pixelSize: valueFontSize
             color: gaugeWarningColor()
             property color bgColor: "#00000000"

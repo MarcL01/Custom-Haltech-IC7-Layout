@@ -29,7 +29,6 @@ Item {
     property real gaugeValueFactor: 1
     property int gaugePrecision : 3
     property int gaugeDecimalPlaces : 0
-    property string gaugeSelectedUnit : ""
     property color brightColor : "#ffdd14"
     property color darkColor : "#776800"
     property color backgroundColor : "white"
@@ -48,15 +47,13 @@ Item {
     }
 
     property int numOf500Rpms: (gaugeMaximumValue - gaugeMinimumValue) / 500
-    property real widthPer500Rpm: (gauge.width / numOf500Rpms)-2.2
     property real numToRedZone: gaugeRedStartValue / 500
-    property real numToOrangeZone: numToRedZone - 1
-    property real numToYellowZone: numToRedZone - 2
 
-    function getLengthByIndex(index) {
+    function getLengthByIndex(parentComp, index) {
+        var widthPer500Rpm = (parentComp.height / numOf500Rpms)
         if (index === 0) {
             if (!enableRedStart || (gaugeRedStartValue > gaugeMaximumValue && gaugeRedStartValue < gaugeMinimumValue)) {
-                return gauge.width
+                return parentComp.height
             }
 
             const numToYellow = numToRedZone - 2
@@ -66,11 +63,6 @@ Item {
         } else if (index === 3) {
             return (numOf500Rpms - numToRedZone) * widthPer500Rpm
         }
-    }
-
-    FontLoader {
-        id: rajdhaniFont
-        source: "../../styles/Rajdhani-SemiBold.ttf"
     }
 
     Gauge {
@@ -139,7 +131,7 @@ Item {
 
                     Rectangle {
                         width: c8BarRoot.height
-                        height: getLengthByIndex(index)
+                        height: getLengthByIndex(backgroundColumn, index)
                         color: getColorByIndex(index)
                     }
                 }
@@ -157,7 +149,7 @@ Item {
                 height: 1
                 color: "black"
 
-                opacity: enableRedStart && styleData.value >= gaugeRedStartValue - 1000 ? 0 : styleData.value <= dataMapValue ? 0 : .3
+                opacity: enableRedStart && styleData.value >= (enableRedStart ? gaugeRedStartValue : gaugeMaximumValue) - 1000 ? 0 : styleData.value <= dataMapValue ? 0 : .3
             }
             tickmark: Item {
                 implicitWidth: 12
@@ -183,7 +175,8 @@ Item {
             }
             tickmarkLabel: Text {
                 x: -2
-                font.family: rajdhaniFont.name
+                font.family: CustomFonts.rajdhani.name
+                font.styleName: CustomFonts.rajdhaniSemiBold
                 font.pixelSize: 20
                 font.bold : true
                 font.italic: true

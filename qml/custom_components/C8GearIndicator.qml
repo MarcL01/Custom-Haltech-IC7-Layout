@@ -27,14 +27,10 @@ Item {
     property int gaugeTextSize: 110
     property int gaugeSwitch: 0
 
-    FontLoader {
-        id: rajdhaniFont
-        source: "../../styles/Rajdhani-Regular.ttf"
-    }
-
     Text {
         id: textField
-        font.family: rajdhaniFont.name
+        font.family: CustomFonts.rajdhani.name
+        font.styleName: CustomFonts.rajdhaniRegular
         font.pixelSize: 170
         font.capitalization: Font.AllUppercase
         color: (dataMapValue.toFixed(0) < gaugeRedStartValue) ? "#ffffff" : "red"
