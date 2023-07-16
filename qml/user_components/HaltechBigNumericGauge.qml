@@ -21,6 +21,8 @@ Item {
     property alias labelY: textLabel.y
     property alias valueX: textValue.x
     property alias valueY: textValue.y
+    property alias valueStyle: textValue.style
+    property alias valueStyleColor: textValue.styleColor
     property alias unitX: textUnit.x
     property alias unitY: textUnit.y
 	property int labelFontSize: 14

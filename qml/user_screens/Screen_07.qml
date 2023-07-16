@@ -206,7 +206,7 @@ Item {
 		x: 360
 		y: 85
 		opacity: 1.0
-		z: 4
+        z: 4
 		HaltechBigNumericGauge{
 					anchors.top: parent.top
 					id: screen_07_gear
@@ -239,6 +239,8 @@ Item {
 					gaugeValueFactor: 1
 					valueX: 26
 					valueY: 10
+                    valueStyle: Text.Outline
+                    valueStyleColor: "red"
 					labelX: 90
 					labelY: 172
 					labelFontSize: 22
