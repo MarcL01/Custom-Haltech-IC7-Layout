@@ -1,0 +1,6 @@
+{
+    // Base path is the repo root dir
+    "globsToReplace": [
+        // Add glob patterns for files you have changed/added here
+    ]
+}
