@@ -1,0 +1,15 @@
+{
+  "name": "custom-haltech-ic7-layout-scripts",
+  "version": "1.0.0",
+  "description": "Scripts to help with the development of custom ic7 layouts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marc L",
+  "license": "SEE LICENSE IN ../LICENSE",
+  "dependencies": {
+    "glob": "^10.3.3",
+    "jszip": "^3.10.1"
+  }
+}
