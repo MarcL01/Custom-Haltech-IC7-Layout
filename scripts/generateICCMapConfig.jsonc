@@ -1,6 +1,13 @@
 {
     // Base path is the repo root dir
     "globsToReplace": [
-        // Add glob patterns for files you have changed/added here
+        "qml/custom_components/**.*",
+        "qml/factory_screens/channels.js",
+        "qml/factory_screens/main.qml",
+        "qml/user_screens/GaugeConfig.js",
+        "qml/user_screens/Screen_07.qml",
+        "styles/Rajdhani-*.ttf",
+        "images/c8-*.png",
+        "data/GaugeSettings.json"
     ]
 }
