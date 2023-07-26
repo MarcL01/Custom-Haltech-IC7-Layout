@@ -6,6 +6,50 @@ Item {
     property FakeGauge longitudinalGForce: longitudinalGForce
     property real gaugeDiameter: 220
 
+    function getHorizontalPos() {
+        var pointX = ((lateralGForce.dataMapValue/lateralGForce.gaugeMaximumValue) * (gaugeDiameter/2))
+        var pointY = ((longitudinalGForce.dataMapValue/longitudinalGForce.gaugeMaximumValue) * (gaugeDiameter/2))
+
+        var edgeX = 0 + (gaugeDiameter/2) * (pointX / Math.sqrt(Math.pow(pointX , 2) + Math.pow(pointY, 2)))
+        if (pointX === 0) {
+            return 0
+        } else if (pointX < 0) {
+            if (edgeX > pointX) {
+                return edgeX
+            } else {
+                return pointX
+            }
+        } else {
+            if (edgeX < pointX) {
+                return edgeX
+            } else {
+                return pointX
+            }
+        }
+    }
+
+    function getVerticalPos() {
+        var pointX = ((lateralGForce.dataMapValue/lateralGForce.gaugeMaximumValue) * (gaugeDiameter/2))
+        var pointY = ((longitudinalGForce.dataMapValue/longitudinalGForce.gaugeMaximumValue) * (gaugeDiameter/2))
+
+        var edgeY = 0 + (gaugeDiameter/2) * (pointY / Math.sqrt(Math.pow(pointX , 2) + Math.pow(pointY, 2)))
+        if (pointY === 0) {
+            return 0
+        } else if (pointY < 0) {
+            if (edgeY > pointY) {
+                return edgeY
+            } else {
+                return pointY
+            }
+        } else {
+            if (edgeY < pointY) {
+                return edgeY
+            } else {
+                return pointY
+            }
+        }
+    }
+
     Rectangle {
         id: gaugeRect
         anchors.horizontalCenter: parent.horizontalCenter
@@ -18,8 +62,6 @@ Item {
 
         height: 230
         width: 350
-
-
 
         Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -57,8 +99,10 @@ Item {
         Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenterOffset: ((lateralGForce.dataMapValue/lateralGForce.gaugeMaximumValue) * (gaugeDiameter/2))
-            anchors.verticalCenterOffset: ((longitudinalGForce.dataMapValue/longitudinalGForce.gaugeMaximumValue) * (gaugeDiameter/2))
+//            anchors.horizontalCenterOffset: ((lateralGForce.dataMapValue/lateralGForce.gaugeMaximumValue) * (gaugeDiameter/2))
+//            anchors.verticalCenterOffset: ((longitudinalGForce.dataMapValue/longitudinalGForce.gaugeMaximumValue) * (gaugeDiameter/2))
+            anchors.horizontalCenterOffset: getHorizontalPos()
+            anchors.verticalCenterOffset: getVerticalPos()
             width: 20
             height: 20
             radius: width * .5

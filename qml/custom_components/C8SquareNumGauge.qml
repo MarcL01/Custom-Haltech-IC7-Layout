@@ -21,8 +21,7 @@ Item {
     property alias unitX: textUnit.x
     property alias unitY: textUnit.y
     property int labelFontSize: 14
-    property int valueFontSize: 46
-    property int unitFontSize: valueFontSize
+    property int unitFontSize: 46
     property alias valueBgColor: textValue.bgColor
     property alias alignment: textValue.horizontalAlignment
     property alias ualignment: textUnit.horizontalAlignment
@@ -125,12 +124,11 @@ Item {
                 z:3
                 text: displayText
                 readonly property string displayText: formatNumber()
-                font.pointSize: valueFontSize
+                font.pointSize: 62
                 font.family: CustomFonts.rajdhani.name
                 font.styleName: CustomFonts.rajdhaniMedium
                 font.italic: true
                 minimumPointSize: 5
-                fontSizeMode: Text.Fit
                 //(dataMapAddress == 1 ) ? ((gaugeMaximumValue < 50) ? dataMapValue * 1000 : dataMapValue ): dataMapValue.toPrecision(gaugePrecision)
             }
 

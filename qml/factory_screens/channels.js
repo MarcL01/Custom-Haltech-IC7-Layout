@@ -184,7 +184,7 @@ function initLayout4(){
 	addWidget(4,0,280,150,100,"layout_04_10");
 	addWidget(4,0,380,150,100,"layout_04_14");
 	addWidget(4,150,80,180,100,"layout_04_03");
-	addWidget(4,150,180,180,100,"layout_04_07");
+    addWidget(4,365-33,300,130,90,"layout_04_07"); // Speed
 	addWidget(4,150,280,180,100,"layout_04_11");
 	addWidget(4,150,380,180,100,"layout_04_15");	
 	addWidget(4,470,80,180,100,"layout_04_04");
@@ -195,7 +195,8 @@ function initLayout4(){
 	addWidget(4,650,180,180,100,"layout_04_09");
 	addWidget(4,650,280,180,100,"layout_04_13");
 	addWidget(4,650,380,180,100,"layout_04_17");
-	addWidget(4,330,85,140,200,"layout_04_gear");
+    addWidget(4,365-33,162-3,130+3,123+3,"layout_04_gear"); // Gear
+    addWidget(4,45-33,25-3,770+3,75+3,"layout_04_RPM_GAUGE"); // RPM
 }
 function initLayout5(){
 	//Dummy for addWidget to work
